@@ -5,6 +5,6 @@ elHamburger.addEventListener('click', () => {
     elHeader.classList.toggle('body--active')
 })
 
-$('.nav__left__link').click(function(){
-    $(this).parent().toggleClass('nav__item--active');
+$('.dorpdown-toggle').click(function(){
+    $(this).parent().parent().toggleClass('nav__item--active');
 });
