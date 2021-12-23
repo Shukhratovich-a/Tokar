@@ -39,6 +39,11 @@
     box-shadow: 0px 4px 4px rgba(203, 135, 52, 0.2);
     border-radius: 4px;
     color: $color3;
+    transition: 0.1s background ease;
+
+    &:active {
+        background: linear-gradient(0deg, #f39c32 0%, #cb8734 100%);
+    }
 }
 
 .call-back__text {
