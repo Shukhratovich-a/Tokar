@@ -162,30 +162,32 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-
-            &::before {
-                content: "";
-                display: block;
-                width: 11px;
-                height: 6px;
-                background-image: url("../images/header/down.svg");
-                background-repeat: no-repeat;
-                background-size: contain;
-            }
-
-            &::after {
-                content: "";
-                display: block;
-                width: 11px;
-                height: 6px;
-                background-image: url("../images/header/down.svg");
-                background-repeat: no-repeat;
-                background-size: contain;
-            }
         }
     }
 
-    .nav__item--active .nav__link {
+    .dorpdown-toggle{
+        &::before {
+            content: "";
+            display: block;
+            width: 11px;
+            height: 6px;
+            background-image: url("../images/header/down.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        &::after {
+            content: "";
+            display: block;
+            width: 11px;
+            height: 6px;
+            background-image: url("../images/header/down.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+
+    .nav__item--active .dorpdown-toggle {
         &::before {
             background-image: url("../images/header/up.svg");
         }
