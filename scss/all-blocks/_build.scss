@@ -1,0 +1,254 @@
+.build .container {
+    position: relative;
+    background-color: #FFFBF7;
+    
+    &::before {
+        position: absolute;
+        top: 860px;
+        right: 20px;
+        width: 1170px;
+        height: 520px;
+        margin-top: 60px;
+        background-image: url(../images/projects/projects-opt/Rectangle.png);
+        background-repeat: no-repeat;
+        border: none;
+        content: '';
+    }
+
+}
+
+.build__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+}
+
+.build__title {
+    max-width: 372px;
+    width: 100%;
+    font-family: $font;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    color: #2B2A28;
+    margin-left: 40px;
+}
+
+.build__item {
+    position: relative;
+    max-width: 570px;
+    width: 100%;
+    height: 324px;
+    padding: 42px 40px 50px 46px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    margin-bottom: 58px;
+    box-shadow: 0px 0px 30px rgba(43, 42, 40, 0.08);
+    
+    &:nth-child(2) {
+        margin-left: 30px;
+    }
+    
+    &:nth-child(4) {
+        margin-left: 30px;
+    }
+    
+    
+    
+    &:first-child::before {
+        position: absolute;
+        top: -40px;
+        right: 26px;
+        content: '';
+        background-image: url(../images/projects/projects-opt/Создание-3D-макета.png);
+        width: 225px;
+        height: 160px;
+        display: block;
+        background-repeat: no-repeat;
+    }
+    
+    &:nth-child(2)::before {
+        position: absolute;
+        top: -80px;
+        right: 14px;
+        content: '';
+        background-image: url(../images/projects/projects-opt/zamer.png);
+        width: 204px;
+        height: 205px;
+        display: block;
+        background-repeat: no-repeat;
+    }
+    
+    &:nth-child(3)::before {
+        position: absolute;
+        top: -26px;
+        right: 13px;
+        content: '';
+        background-image: url(../images/projects/projects-opt/Производство-конструкции.png);
+        width: 268px;
+        height: 130px;
+        display: block;
+        background-repeat: no-repeat;
+    }
+    
+    &:last-child::before {
+        position: absolute;
+        top: -45px;
+        right: 39px;
+        content: '';
+        background-image: url(../../images/projects/projects-opt/Монтаж.png);
+        width: 206px;
+        height: 169px;
+        display: block;
+        background-repeat: no-repeat;
+    }
+    
+    &:first-child::after {
+        position: absolute;
+        right: 23px;
+        bottom: -50px;
+        background-image: url(../../images/projects/projects-opt/01.svg);
+        background-repeat: no-repeat;
+        display: block;
+        width: 162px;
+        height: 140px;
+        content: '';
+    }
+    
+    &:nth-child(2)::after {
+        position: absolute;
+        right: 23px;
+        bottom: -50px;
+        background-image: url(../../images/projects/projects-opt/02.svg);
+        background-repeat: no-repeat;
+        display: block;
+        width: 162px;
+        height: 140px;
+        content: '';
+    }
+    
+    &:nth-child(3)::after {
+        position: absolute;
+        right: 23px;
+        bottom: -50px;
+        background-image: url(../../images/projects/projects-opt/03.svg);
+        background-repeat: no-repeat;
+        display: block;
+        width: 162px;
+        height: 140px;
+        content: '';
+    }
+    
+    &:last-child::after {
+        position: absolute;
+        right: 23px;
+        bottom: -45px;
+        background-image: url(../../images/projects/projects-opt/04.svg);
+        background-repeat: no-repeat;
+        display: block;
+        width: 162px;
+        height: 140px;
+        content: '';
+    }
+}
+
+.build__item__heading {
+    max-width: 254px;
+    width: 100%;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 10px;
+    font-family: $font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 36px;
+    color: #2B2A28;
+}
+
+.build__item__headings {
+    max-width: 372px;
+    width: 100%;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 10px;
+    font-family: $font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 36px;
+    color: #2B2A28;
+}
+
+.build__item__text {
+    max-width: 485px;
+    width: 100%;
+    margin: 0;
+    text-align: left;
+    font-family: $font;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 30px;
+    color: #2B2A28;
+}
+
+.build__img {
+    width: 1170px;
+    height: 520px;
+    border-radius: 0px 100px;
+}
+
+.build__box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.build__button {
+    width: 280px;
+    height: 66px;
+    margin-top: 620px;
+    margin-right: 44px;
+    font-family: $font;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    background: linear-gradient(180deg, #F39C32 0%, #CB8734 100%);
+    box-shadow: 0px 4px 4px rgba(203, 135, 52, 0.2);
+    border-radius: 4px;
+    border: none;
+}
+
+.build__catalog {
+    position: relative;
+    align-items: flex-end;
+    margin-top: 638px;
+    margin-left: 44px;
+    font-family: $font;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    color: #CB8734;
+
+    &::after {
+        position: absolute;
+        margin-left: -44px;
+        top: -7px;
+        left: 0;
+        width: 30px;
+        height: 30px;
+        background-image: url(../../images/projects/projects-opt/Иконка.png);
+        background-repeat: no-repeat;
+        content: '';
+    }
+}

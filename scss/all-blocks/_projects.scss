@@ -1,0 +1,307 @@
+.projects {
+    background-image: url(../../images/projects/projects-opt/фон.png);
+    background-repeat: no-repeat;
+    background-position: left calc(50% + 350px) bottom -5px;
+}
+
+.projects__heading {
+    margin-top: 145px;
+    margin-left: 40px;
+    font-family: $font;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 58px;
+    color: $color1;
+}
+
+.projects__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 770px;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+}
+
+.projects__item {
+    max-width: 370px;
+    width: 100%;
+    max-height: 460px;
+    height: 100%;
+    list-style: none;
+    background: $color3;
+    box-shadow: 0px 0px 30px rgba(43, 42, 40, 0.08);
+    border-radius: 0px 40px 0px 0px;
+    
+    &__heading {
+        margin-top: 36px;
+        margin-right: 20px;
+        margin-bottom: 9px;
+        margin-left: 50px;
+        font-family: $font;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 30px;
+        color: $color1;
+    }
+    
+    &__text {
+        margin-right: 20px;
+        margin-bottom: 23px;
+        margin-left: 50px;
+        font-family: $font;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 28px;
+        color: $color1;
+    }
+
+    &__image {
+        margin-top: 5px;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    
+    &__link {
+        display: flex;
+        align-items: center;
+        max-width: 236px;
+        width: 100%;
+        margin-top: 14px;
+        margin-right: 84px;
+        margin-bottom: 50px;
+        margin-left: 50px;
+        font-family: $font;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 16px;
+        color: $color5;
+        text-decoration-line: none;
+        
+        &-image {
+            width: 30px;
+            height: 30px;
+            margin-right: 12px;
+        }
+    }
+}
+
+.projects__item:last-child {
+    max-width: 770px;
+    width: 100%;
+    max-height: 320px;
+    height: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    
+    .projects__item__image {
+        width: 420px;
+        height: 310px;
+        margin-top: 5px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+    
+    .projects__item__link {
+        margin-top: 28px;
+        margin-right: 60px;
+        margin-bottom: 63px;
+        margin-left: 50px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .projects__info {
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .projects {
+        background-image: url(../../images/projects/projects-opt/фон.png);
+        background-repeat: no-repeat;
+        background-position: left calc(50% + 150px) bottom calc(50% + 250px);
+    }
+    
+    .projects__heading {
+        margin-left: 0;
+        text-align: center;
+    }
+    
+    .projects__list {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    
+    .projects__item + .projects__item {
+        margin-top: 25px;
+    }
+    
+    .projects__item:last-child {
+        display: flex;
+        flex-direction: column;
+        max-width: 360px;
+        width: 100%;
+        max-height: 550px;
+        height: 100%;
+        list-style: none;
+        background: $color3;
+        box-shadow: 0px 0px 30px rgba(43, 42, 40, 0.08);
+        border-radius: 0px 40px 0px 0px;
+        
+        .projects__item__image {
+            max-width: 360px;
+            width: 100%;
+            max-height: 230px;
+            height: 100%;
+        }
+        
+        .projects__item__text {
+            max-width: 256px;
+            width: 100%;
+        }
+        
+        .projects__item__link {
+            margin-bottom: 32px;
+        }
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .projects {
+        background-image: none;
+    }
+    
+    .projects__heading {
+        max-width: 300px;
+        width: 100%;
+        font-family: $font;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 30px;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 25px;
+        color: $color1;
+    }
+    
+    .projects__item {
+        max-width: 300px;
+        width: 100%;
+        min-height: 420px;
+        height: 100%;
+        
+        &__image {
+            max-width: 300px;
+            width: 100%;
+            max-height: 200px;
+            height: 100%;
+        }
+        
+        &__heading {
+            max-width: 256px;
+            width: 100%;
+            margin-top: 28px;
+            margin-right: 24px;
+            margin-bottom: 9px;
+            margin-left: 20px;
+            font-family: $font;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 30px;
+            color: $color1;
+        }
+        
+        &__text {
+            max-width: 256px;
+            width: 100%;
+            margin-right: 24px;
+            margin-bottom: 12px;
+            margin-left: 20px;
+            font-family: $font;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 24px;
+            color: $color1;
+        }
+
+        &__link {
+            margin-right: 44px;
+            margin-bottom: 34px;
+            margin-left: 20px;
+        }
+    }
+
+    .projects__item:last-child {
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+        width: 100%;
+        max-height: 550px;
+        height: 100%;
+        list-style: none;
+        background: $color3;
+        box-shadow: 0px 0px 30px rgba(43, 42, 40, 0.08);
+        border-radius: 0px 40px 0px 0px;
+        
+        .projects__item__image {
+            max-width: 300px;
+            width: 100%;
+            max-height: 200px;
+            height: 100%;
+        }
+        
+        .projects__item__heading {
+            max-width: 256px;
+            width: 100%;
+            margin-top: 28px;
+            margin-right: 24px;
+            margin-bottom: 9px;
+            margin-left: 20px;
+            font-family: $font;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 30px;
+            color: $color1;
+        }
+        
+        .projects__item__text {
+            max-width: 256px;
+            width: 100%;
+            margin-right: 24px;
+            margin-bottom: 12px;
+            margin-left: 20px;
+            font-family: $font;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 24px;
+            color: $color1;
+        }
+
+        .projects__item__link {
+            margin-right: 44px;
+            margin-bottom: 34px;
+            margin-left: 20px;
+        }
+    }
+    
+    
+
+
+    
+    
+}
