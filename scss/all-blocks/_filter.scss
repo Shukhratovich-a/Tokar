@@ -1,0 +1,59 @@
+.filter{
+    display: inline-block;
+    width: 270px;
+}
+
+.filter__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.filter__item {
+    & + & {
+        margin-top: 30px;
+    }
+}
+
+.filter__sublist{
+    width: 230px;
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: none;
+}
+
+.filter__sublist__item{
+    &+&{
+        margin-top: 6px;
+    }
+
+    display: flex;
+    align-items: flex-start;
+
+    &::before {
+        content: "";
+        display: inline-block;
+        min-width: 7px;
+        min-height: 12px;
+        margin-top: 5px;
+        margin-right: 13px;
+        background-image: url("../images/types/marker.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+.filter__sublist__link {
+    display: block;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 22px;
+    text-decoration: none;
+    color: $color1;
+
+    &:hover{
+        font-weight: 600;
+        color: $color5;
+    }
+}
