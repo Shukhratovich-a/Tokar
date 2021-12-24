@@ -16,3 +16,9 @@
     line-height: 58px;
     white-space: nowrap;
 }
+
+.catalog__bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
