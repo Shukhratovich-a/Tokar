@@ -1,0 +1,18 @@
+.catalog .container {
+    padding-top: 20px;
+}
+
+.catalog__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 40px;
+}
+
+.catalog__heading {
+    margin: 0;
+    margin-right: 32px;
+    font-size: 36px;
+    line-height: 58px;
+    white-space: nowrap;
+}
