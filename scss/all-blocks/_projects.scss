@@ -4,6 +4,10 @@
     background-position: left calc(50% + 350px) bottom -5px;
 }
 
+.projects .container {
+    margin-bottom: 145px;
+}
+
 .projects__heading {
     margin-top: 145px;
     margin-left: 40px;
@@ -19,6 +23,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 0;
+    margin-top: 0;
     flex-wrap: wrap;
     max-width: 770px;
     width: 100%;
@@ -35,7 +41,7 @@
     background: $color3;
     box-shadow: 0px 0px 30px rgba(43, 42, 40, 0.08);
     border-radius: 0px 40px 0px 0px;
-    
+
     &__heading {
         margin-top: 36px;
         margin-right: 20px;
@@ -48,7 +54,7 @@
         line-height: 30px;
         color: $color1;
     }
-    
+
     &__text {
         margin-right: 20px;
         margin-bottom: 23px;
@@ -66,7 +72,7 @@
         margin-right: 5px;
         margin-left: 5px;
     }
-    
+
     &__link {
         display: flex;
         align-items: center;
@@ -83,7 +89,7 @@
         line-height: 16px;
         color: $color5;
         text-decoration-line: none;
-        
+
         &-image {
             width: 30px;
             height: 30px;
@@ -102,7 +108,7 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 30px;
-    
+
     .projects__item__image {
         width: 420px;
         height: 310px;
@@ -110,7 +116,7 @@
         margin-right: 5px;
         margin-bottom: 5px;
     }
-    
+
     .projects__item__link {
         margin-top: 28px;
         margin-right: 60px;
@@ -125,27 +131,32 @@
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 780px) {
     .projects {
         background-image: url(../../images/projects/projects-opt/фон.png);
         background-repeat: no-repeat;
         background-position: left calc(50% + 150px) bottom calc(50% + 250px);
     }
-    
+
+    .projects .container {
+        margin-bottom: 60px;
+    }
+
     .projects__heading {
         margin-left: 0;
         text-align: center;
+        margin-top: 60px;
     }
-    
+
     .projects__list {
         flex-direction: column;
         margin: 0 auto;
     }
-    
+
     .projects__item + .projects__item {
         margin-top: 25px;
     }
-    
+
     .projects__item:last-child {
         display: flex;
         flex-direction: column;
@@ -157,19 +168,19 @@
         background: $color3;
         box-shadow: 0px 0px 30px rgba(43, 42, 40, 0.08);
         border-radius: 0px 40px 0px 0px;
-        
+
         .projects__item__image {
             max-width: 360px;
             width: 100%;
             max-height: 230px;
             height: 100%;
         }
-        
+
         .projects__item__text {
             max-width: 256px;
             width: 100%;
         }
-        
+
         .projects__item__link {
             margin-bottom: 32px;
         }
@@ -180,7 +191,11 @@
     .projects {
         background-image: none;
     }
-    
+
+    .projects .container{
+        padding-top: 60px;
+    }
+
     .projects__heading {
         max-width: 300px;
         width: 100%;
@@ -194,20 +209,20 @@
         margin-bottom: 25px;
         color: $color1;
     }
-    
+
     .projects__item {
         max-width: 300px;
         width: 100%;
         min-height: 420px;
         height: 100%;
-        
+
         &__image {
             max-width: 300px;
             width: 100%;
             max-height: 200px;
             height: 100%;
         }
-        
+
         &__heading {
             max-width: 256px;
             width: 100%;
@@ -222,7 +237,7 @@
             line-height: 30px;
             color: $color1;
         }
-        
+
         &__text {
             max-width: 256px;
             width: 100%;
@@ -255,14 +270,14 @@
         background: $color3;
         box-shadow: 0px 0px 30px rgba(43, 42, 40, 0.08);
         border-radius: 0px 40px 0px 0px;
-        
+
         .projects__item__image {
             max-width: 300px;
             width: 100%;
             max-height: 200px;
             height: 100%;
         }
-        
+
         .projects__item__heading {
             max-width: 256px;
             width: 100%;
@@ -277,7 +292,7 @@
             line-height: 30px;
             color: $color1;
         }
-        
+
         .projects__item__text {
             max-width: 256px;
             width: 100%;
@@ -298,10 +313,4 @@
             margin-left: 20px;
         }
     }
-    
-    
-
-
-    
-    
 }
