@@ -1,0 +1,21 @@
+.socials__text {
+    margin-top: 0;
+    margin-bottom: 4px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.08em;
+}
+
+.socials__list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.social{
+    &+&{
+        margin-left: 4px;
+    }
+}
