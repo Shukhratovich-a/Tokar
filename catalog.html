@@ -270,6 +270,12 @@
     <!-- MAIN -->
     <main class="main">
         <section class="catalog">
+
+            <div class="cotalog__mobile-bar">
+                <button class="filter__button" type="button"></button>
+                <button class="search__button" type="button"></button>
+            </div>
+            
             <div class="container">
                 <!-- Catalog top -->
                 
@@ -291,169 +297,243 @@
                 
                 <div class="catalog__bottom">
                     <div class="catalog__filter filter">
-                        <ul class="filter__list">
-                            <li class="filter__item">
-                                <ul class="filter__sublist">
-                                    <li class="filter__sublist__item">
-                                        <a class="filter__sublist__link" href="#">
-                                            Дома
-                                        </a>
-                                    </li>
-                    
-                                    <li class="filter__sublist__item">
-                                        <a class="filter__sublist__link" href="#">
-                                            Дома из профилированого бруса
-                                        </a>
-                                    </li>
-                    
-                                    <li class="filter__sublist__item">
-                                        <a class="filter__sublist__link" href="#">
-                                            Дома из оцилиндрованого бруса
-                                        </a>
-                                    </li>
-                    
-                                    <li class="filter__sublist__item">
-                                        <a class="filter__sublist__link" href="#">
-                                            Каркасные дома
-                                        </a>
-                                    </li>
-                    
-                                    <li class="filter__sublist__item">
-                                        <a class="filter__sublist__link" href="#">
-                                            Дома из блока
-                                        </a>
-                                    </li>
-                    
-                                    <li class="filter__sublist__item">
-                                        <a class="filter__sublist__link" href="#">
-                                            Дачи
-                                        </a>
-                                    </li>
-                    
-                                    <li class="filter__sublist__item">
-                                        <a class="filter__sublist__link" href="#">
-                                            Коттеджи
-                                        </a>
-                                    </li>
-                    
-                                    <li class="filter__sublist__item">
-                                        <a class="filter__sublist__link" href="#">
-                                            Виллы
-                                        </a>
-                                    </li>
-                    
-                                    <li class="filter__sublist__item">
-                                        <a class="filter__sublist__link" href="#">
-                                            Усадьбы
-                                        </a>
-                                    </li>
-                    
-                                    <li class="filter__sublist__item">
-                                        <a class="filter__sublist__link" href="#">
-                                            Особняки
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                    
-                            <li class="filter__item">
-                                <ul class="filter__sublist">
-                                    <li class="filter__sublist__item">
-                                        <a class="filter__sublist__link" href="#">
-                                            Базы отдыха
-                                        </a>
-                                    </li>
-                    
-                                    <li class="filter__sublist__item">
-                                        <a class="filter__sublist__link" href="#">
-                                            Гостинницы
-                                        </a>
-                                    </li>
-                    
-                                    <li class="filter__sublist__item">
-                                        <a class="filter__sublist__link" href="#">
-                                            Рестораны
-                                        </a>
-                                    </li>
-                    
-                                    <li class="filter__sublist__item">
-                                        <a class="filter__sublist__link" href="#">
-                                            Кафе
-                                        </a>
-                                    </li>
-                    
-                                    <li class="filter__sublist__item">
-                                        <a class="filter__sublist__link" href="#">
-                                            Магазины
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                    
-                            <li class="filter__item">
-                                <ul class="filter__sublist">
-                                    <li class="filter__sublist__item">
-                                        <a class="filter__sublist__link" href="#">
-                                            Деревянные	бани из	оцилиндрованого бруса
-                                        </a>
-                                    </li>
-                    
-                                    <li class="filter__sublist__item">
-                                        <a class="filter__sublist__link" href="#">
-                                            Беседки
-                                        </a>
-                                    </li>
-                    
-                                    <li class="filter__sublist__item">
-                                        <a class="filter__sublist__link" href="#">
-                                            Каркасные	конструкции
-                                        </a>
-                                    </li>
-                    
-                                    <li class="filter__sublist__item">
-                                        <a class="filter__sublist__link" href="#">
-                                            Беседки
-                                        </a>
-                                    </li>
-                    
-                                    <li class="filter__sublist__item">
-                                        <a class="filter__sublist__link" href="#">
-                                            Альтанки
-                                        </a>
-                                    </li>
-                    
-                                    <li class="filter__sublist__item">
-                                        <a class="filter__sublist__link" href="#">
-                                            Гаражи
-                                        </a>
-                                    </li>
-                    
-                                    <li class="filter__sublist__item">
-                                        <a class="filter__sublist__link" href="#">
-                                            Кухни
-                                        </a>
-                                    </li>
-                    
-                                    <li class="filter__sublist__item">
-                                        <a class="filter__sublist__link" href="#">
-                                            Детские	игровые площадки
-                                        </a>
-                                    </li>
-                    
-                                    <li class="filter__sublist__item">
-                                        <a class="filter__sublist__link" href="#">
-                                            Деревянные	детские домики
-                                        </a>
-                                    </li>
-                    
-                                    <li class="filter__sublist__item">
-                                        <a class="filter__sublist__link" href="#">
-                                            Мангальные	зоны и	барбекю
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
+                        <div class="filter__inner">
+                            <h3 class="filter__heading">Подкатегория</h3>
+                            
+                            <ul class="filter__list">
+                                <li class="filter__item">
+                                    <h4 class="filter__item__heading">Дома и жилые строения</h4>
+                                    
+                                    <ul class="filter__sublist">
+                                        <li class="filter__sublist__item">
+                                            <a class="filter__sublist__link" href="#">
+                                                Дома
+                                            </a>
+                                        </li>
+                                        
+                                        <li class="filter__sublist__item">
+                                            <a class="filter__sublist__link" href="#">
+                                                Дома из профилированого бруса
+                                            </a>
+                                        </li>
+                                        
+                                        <li class="filter__sublist__item">
+                                            <a class="filter__sublist__link" href="#">
+                                                Дома из оцилиндрованого бруса
+                                            </a>
+                                        </li>
+                                        
+                                        <li class="filter__sublist__item">
+                                            <a class="filter__sublist__link" href="#">
+                                                Каркасные дома
+                                            </a>
+                                        </li>
+                                        
+                                        <li class="filter__sublist__item">
+                                            <a class="filter__sublist__link" href="#">
+                                                Дома из блока
+                                            </a>
+                                        </li>
+                                        
+                                        <li class="filter__sublist__item">
+                                            <a class="filter__sublist__link" href="#">
+                                                Дачи
+                                            </a>
+                                        </li>
+                                        
+                                        <li class="filter__sublist__item">
+                                            <a class="filter__sublist__link" href="#">
+                                                Коттеджи
+                                            </a>
+                                        </li>
+                                        
+                                        <li class="filter__sublist__item">
+                                            <a class="filter__sublist__link" href="#">
+                                                Виллы
+                                            </a>
+                                        </li>
+                                        
+                                        <li class="filter__sublist__item">
+                                            <a class="filter__sublist__link" href="#">
+                                                Усадьбы
+                                            </a>
+                                        </li>
+                                        
+                                        <li class="filter__sublist__item">
+                                            <a class="filter__sublist__link" href="#">
+                                                Особняки
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                
+                                <li class="filter__item">
+                                    <h4 class="filter__item__heading">Коммерческие	строения</h4>
+                                    
+                                    <ul class="filter__sublist">
+                                        <li class="filter__sublist__item">
+                                            <a class="filter__sublist__link" href="#">
+                                                Базы отдыха
+                                            </a>
+                                        </li>
+                                        
+                                        <li class="filter__sublist__item">
+                                            <a class="filter__sublist__link" href="#">
+                                                Гостинницы
+                                            </a>
+                                        </li>
+                                        
+                                        <li class="filter__sublist__item">
+                                            <a class="filter__sublist__link" href="#">
+                                                Рестораны
+                                            </a>
+                                        </li>
+                                        
+                                        <li class="filter__sublist__item">
+                                            <a class="filter__sublist__link" href="#">
+                                                Кафе
+                                            </a>
+                                        </li>
+                                        
+                                        <li class="filter__sublist__item">
+                                            <a class="filter__sublist__link" href="#">
+                                                Магазины
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                
+                                <li class="filter__item">
+                                    <h4 class="filter__item__heading">Садовые и хоз постройки</h4>
+                                    
+                                    <ul class="filter__sublist">
+                                        <li class="filter__sublist__item">
+                                            <a class="filter__sublist__link" href="#">
+                                                Деревянные	бани из	оцилиндрованого бруса
+                                            </a>
+                                        </li>
+                                        
+                                        <li class="filter__sublist__item">
+                                            <a class="filter__sublist__link" href="#">
+                                                Беседки
+                                            </a>
+                                        </li>
+                                        
+                                        <li class="filter__sublist__item">
+                                            <a class="filter__sublist__link" href="#">
+                                                Каркасные	конструкции
+                                            </a>
+                                        </li>
+                                        
+                                        <li class="filter__sublist__item">
+                                            <a class="filter__sublist__link" href="#">
+                                                Беседки
+                                            </a>
+                                        </li>
+                                        
+                                        <li class="filter__sublist__item">
+                                            <a class="filter__sublist__link" href="#">
+                                                Альтанки
+                                            </a>
+                                        </li>
+                                        
+                                        <li class="filter__sublist__item">
+                                            <a class="filter__sublist__link" href="#">
+                                                Гаражи
+                                            </a>
+                                        </li>
+                                        
+                                        <li class="filter__sublist__item">
+                                            <a class="filter__sublist__link" href="#">
+                                                Кухни
+                                            </a>
+                                        </li>
+                                        
+                                        <li class="filter__sublist__item">
+                                            <a class="filter__sublist__link" href="#">
+                                                Детские	игровые площадки
+                                            </a>
+                                        </li>
+                                        
+                                        <li class="filter__sublist__item">
+                                            <a class="filter__sublist__link" href="#">
+                                                Деревянные	детские домики
+                                            </a>
+                                        </li>
+                                        
+                                        <li class="filter__sublist__item">
+                                            <a class="filter__sublist__link" href="#">
+                                                Мангальные	зоны и	барбекю
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="filter__inner">
+                            <h3 class="filter__heading">Сортировать по:</h3>
+                            
+                            <ul class="filter__sublist">
+                                <li class="filter__sublist__item">
+                                    <a class="filter__sublist__link" href="#">
+                                        Алфавиту
+                                    </a>
+                                </li>
+                                
+                                <li class="filter__sublist__item">
+                                    <a class="filter__sublist__link" href="#">
+                                        Популярности
+                                    </a>
+                                </li>
+                                
+                                <li class="filter__sublist__item">
+                                    <a class="filter__sublist__link" href="#">
+                                        Цене
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="filter__inner">
+                            <h3 class="filter__heading">Площадь (м):</h3>
+                            
+                            <form class="filter__form">
+                                <div class="filter__range">
+                                    <label class="filter__range__label">
+                                        <input class="filter__slider filter__slider--place"  type="range" value="268" min="10" max="500">
+                                        
+                                        <span class="filter__range__fill filter__range__fill--place"></span>
+                                    </label>
+                                    
+                                    <span class="filer__range__number filer__range__number--place">268</span>
+                                </div>
+                                
+                                <div class="box-minmax">
+                                    <span>10</span><span>500</span>
+                                </div>
+                            </form>
+                        </div>
+                        
+                        <div class="filter__inner">
+                            <h3 class="filter__heading">Цена (грн):</h3>
+                            
+                            <form class="filter__form">
+                                <div class="filter__range">
+                                    <label class="filter__range__label">
+                                        <input class="filter__slider filter__slider filter__slider--price" type="range" value="2680000" min="100000" max="5000000">
+                                        
+                                        <span class="filter__range__fill filter__range__fill--price"></span>
+                                    </label>
+                                    
+                                    <span class="filer__range__number filer__range__number--price">2 680 000</span>
+                                </div>
+                                
+                                <div class="box-minmax">
+                                    <span>100 000</span><span>5 000 000</span>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                     
                     <div class="catalog__right">
@@ -466,19 +546,19 @@
                                         media="(max-width: 425px)"
                                         srcset="./images/catalog/mobile/webp/2x/mobile-1@2x.webp 2x, ./images/catalog/mobile/webp/1x/mobile-1.webp 1x"
                                         >
-                    
+                                        
                                         <source
                                         type="image/webp"
                                         srcset="./images/catalog/desktop/webp/2x/desktop-1@2x.webp 2x, ./images/catalog/desktop/webp/1x/desktop-1.webp 1x"
                                         >
-                    
+                                        
                                         <!-- jpeg -->
-                    
+                                        
                                         <source
                                         media="(max-width: 425px)"
                                         srcset="./images/catalog/mobile/2x/mobile-1@2x.jpg 2x, ./images/catalog/mobile/1x/mobile-1.jpg 1x"
                                         >
-                    
+                                        
                                         <img
                                         class="card__image"
                                         src="./images/catalog/desktop/1x/desktop-1.jpg"
@@ -488,13 +568,13 @@
                                         height="180"
                                         >
                                     </picture>
-                    
+                                    
                                     <div class="card__inner">
                                         <h3 class="card__heading">
                                             <span class="card__heading__text">Вариант Z-65</span>
                                             <span class="card__heading__text">«Bavaria»</span>
                                         </h3>
-                    
+                                        
                                         <div class="card__info">
                                             <div class="card__info__inner">
                                                 <img
@@ -506,9 +586,9 @@
                                                 >
                                                 <span class="card__info__text">7,5х9 м</span>
                                             </div>
-                    
+                                            
                                             <span class="card__price">1 000 000 грн</span>
-                    
+                                            
                                             <div class="card__info__inner">
                                                 <img
                                                 class="card__info__image"
@@ -527,7 +607,7 @@
                                     </div>
                                 </div>
                             </li>
-
+                            
                             <li class="catalog__item">
                                 <div class="catalog__card">
                                     <picture>
@@ -536,19 +616,19 @@
                                         media="(max-width: 425px)"
                                         srcset="./images/catalog/mobile/webp/2x/mobile-2@2x.webp 2x, ./images/catalog/mobile/webp/1x/mobile-2.webp 1x"
                                         >
-                    
+                                        
                                         <source
                                         type="image/webp"
                                         srcset="./images/catalog/desktop/webp/2x/desktop-2@2x.webp 2x, ./images/catalog/desktop/webp/1x/desktop-2.webp 1x"
                                         >
-                    
+                                        
                                         <!-- jpeg -->
-                    
+                                        
                                         <source
                                         media="(max-width: 425px)"
                                         srcset="./images/catalog/mobile/2x/mobile-2@2x.jpg 2x, ./images/catalog/mobile/1x/mobile-2.jpg 1x"
                                         >
-                    
+                                        
                                         <img
                                         class="card__image"
                                         src="./images/catalog/desktop/1x/desktop-2.jpg"
@@ -558,27 +638,27 @@
                                         height="180"
                                         >
                                     </picture>
-                    
+                                    
                                     <div class="card__inner">
                                         <h3 class="card__heading">
                                             <span class="card__heading__text">Вариант ST-56</span>
                                             <span class="card__heading__text">«Barcelona»</span>
                                         </h3>
-                    
+                                        
                                         <div class="card__info">
                                             <div class="card__info__inner">
                                                 <img
                                                 class="card__info__image"
                                                 src="./images/catalog/place.svg"
-                                                alt=""
+                                                alt="cds"
                                                 width="32"
                                                 height="32"
                                                 >
                                                 <span class="card__info__text">7,5х9 м</span>
                                             </div>
-                    
+                                            
                                             <span class="card__price">2 800 000 грн</span>
-                    
+                                            
                                             <div class="card__info__inner">
                                                 <img
                                                 class="card__info__image"
@@ -597,7 +677,7 @@
                                     </div>
                                 </div>
                             </li>
-
+                            
                             <li class="catalog__item">
                                 <div class="catalog__card">
                                     <picture>
@@ -606,19 +686,19 @@
                                         media="(max-width: 425px)"
                                         srcset="./images/catalog/mobile/webp/2x/mobile-3@2x.webp 2x, ./images/catalog/mobile/webp/1x/mobile-3.webp 1x"
                                         >
-                    
+                                        
                                         <source
                                         type="image/webp"
                                         srcset="./images/catalog/desktop/webp/2x/desktop-3@2x.webp 2x, ./images/catalog/desktop/webp/1x/desktop-3.webp 1x"
                                         >
-                    
+                                        
                                         <!-- jpeg -->
-                    
+                                        
                                         <source
                                         media="(max-width: 425px)"
                                         srcset="./images/catalog/mobile/2x/mobile-3@2x.jpg 2x, ./images/catalog/mobile/1x/mobile-3.jpg 1x"
                                         >
-                    
+                                        
                                         <img
                                         class="card__image"
                                         src="./images/catalog/desktop/1x/desktop-3.jpg"
@@ -628,13 +708,13 @@
                                         height="180"
                                         >
                                     </picture>
-                    
+                                    
                                     <div class="card__inner">
                                         <h3 class="card__heading">
                                             <span class="card__heading__text">Вариант ST-25</span>
                                             <span class="card__heading__text">«Garden ECO»</span>
                                         </h3>
-                    
+                                        
                                         <div class="card__info">
                                             <div class="card__info__inner">
                                                 <img
@@ -646,9 +726,9 @@
                                                 >
                                                 <span class="card__info__text">7,5х9 м</span>
                                             </div>
-                    
+                                            
                                             <span class="card__price">580 000 грн</span>
-                    
+                                            
                                             <div class="card__info__inner">
                                                 <img
                                                 class="card__info__image"
@@ -667,7 +747,7 @@
                                     </div>
                                 </div>
                             </li>
-
+                            
                             <li class="catalog__item">
                                 <div class="catalog__card">
                                     <picture>
@@ -676,19 +756,19 @@
                                         media="(max-width: 425px)"
                                         srcset="./images/catalog/mobile/webp/2x/mobile-4@2x.webp 2x, ./images/catalog/mobile/webp/1x/mobile-4.webp 1x"
                                         >
-                    
+                                        
                                         <source
                                         type="image/webp"
                                         srcset="./images/catalog/desktop/webp/2x/desktop-4@2x.webp 2x, ./images/catalog/desktop/webp/1x/desktop-4.webp 1x"
                                         >
-                    
+                                        
                                         <!-- jpeg -->
-                    
+                                        
                                         <source
                                         media="(max-width: 425px)"
                                         srcset="./images/catalog/mobile/2x/mobile-4@2x.jpg 2x, ./images/catalog/mobile/1x/mobile-4.jpg 1x"
                                         >
-                    
+                                        
                                         <img
                                         class="card__image"
                                         src="./images/catalog/desktop/1x/desktop-4.jpg"
@@ -698,13 +778,13 @@
                                         height="180"
                                         >
                                     </picture>
-                    
+                                    
                                     <div class="card__inner">
                                         <h3 class="card__heading">
                                             <span class="card__heading__text">Вариант ST-53</span>
                                             <span class="card__heading__text">«Feeria»</span>
                                         </h3>
-                    
+                                        
                                         <div class="card__info">
                                             <div class="card__info__inner">
                                                 <img
@@ -716,9 +796,9 @@
                                                 >
                                                 <span class="card__info__text">7,5х9 м</span>
                                             </div>
-                    
+                                            
                                             <span class="card__price">980 000 грн</span>
-                    
+                                            
                                             <div class="card__info__inner">
                                                 <img
                                                 class="card__info__image"
@@ -737,7 +817,7 @@
                                     </div>
                                 </div>
                             </li>
-
+                            
                             <li class="catalog__item">
                                 <div class="catalog__card">
                                     <picture>
@@ -746,19 +826,19 @@
                                         media="(max-width: 425px)"
                                         srcset="./images/catalog/mobile/webp/2x/mobile-5@2x.webp 2x, ./images/catalog/mobile/webp/1x/mobile-5.webp 1x"
                                         >
-                    
+                                        
                                         <source
                                         type="image/webp"
                                         srcset="./images/catalog/desktop/webp/2x/desktop-5@2x.webp 2x, ./images/catalog/desktop/webp/1x/desktop-5.webp 1x"
                                         >
-                    
+                                        
                                         <!-- jpeg -->
-                    
+                                        
                                         <source
                                         media="(max-width: 425px)"
                                         srcset="./images/catalog/mobile/2x/mobile-5@2x.jpg 2x, ./images/catalog/mobile/1x/mobile-5.jpg 1x"
                                         >
-                    
+                                        
                                         <img
                                         class="card__image"
                                         src="./images/catalog/desktop/1x/desktop-5.jpg"
@@ -768,13 +848,13 @@
                                         height="180"
                                         >
                                     </picture>
-                    
+                                    
                                     <div class="card__inner">
                                         <h3 class="card__heading">
                                             <span class="card__heading__text">Вариант LX-75</span>
                                             <span class="card__heading__text">«JULIA»</span>
                                         </h3>
-                    
+                                        
                                         <div class="card__info">
                                             <div class="card__info__inner">
                                                 <img
@@ -786,9 +866,9 @@
                                                 >
                                                 <span class="card__info__text">7,5х9 м</span>
                                             </div>
-                    
+                                            
                                             <span class="card__price">2 350 000 грн</span>
-                    
+                                            
                                             <div class="card__info__inner">
                                                 <img
                                                 class="card__info__image"
@@ -807,7 +887,7 @@
                                     </div>
                                 </div>
                             </li>
-
+                            
                             <li class="catalog__item">
                                 <div class="catalog__card">
                                     <picture>
@@ -816,19 +896,19 @@
                                         media="(max-width: 425px)"
                                         srcset="./images/catalog/mobile/webp/2x/mobile-6@2x.webp 2x, ./images/catalog/mobile/webp/1x/mobile-6.webp 1x"
                                         >
-                    
+                                        
                                         <source
                                         type="image/webp"
                                         srcset="./images/catalog/desktop/webp/2x/desktop-6@2x.webp 2x, ./images/catalog/desktop/webp/1x/desktop-6.webp 1x"
                                         >
-                    
+                                        
                                         <!-- jpeg -->
-                    
+                                        
                                         <source
                                         media="(max-width: 425px)"
                                         srcset="./images/catalog/mobile/2x/mobile-6@2x.jpg 2x, ./images/catalog/mobile/1x/mobile-6.jpg 1x"
                                         >
-                    
+                                        
                                         <img
                                         class="card__image"
                                         src="./images/catalog/desktop/1x/desktop-6.jpg"
@@ -838,13 +918,13 @@
                                         height="180"
                                         >
                                     </picture>
-                    
+                                    
                                     <div class="card__inner">
                                         <h3 class="card__heading">
                                             <span class="card__heading__text">Вариант ST-49v2</span>
                                             <span class="card__heading__text">«Nevada»</span>
                                         </h3>
-                    
+                                        
                                         <div class="card__info">
                                             <div class="card__info__inner">
                                                 <img
@@ -856,9 +936,9 @@
                                                 >
                                                 <span class="card__info__text">7,5х9 м</span>
                                             </div>
-                    
+                                            
                                             <span class="card__price">2 421 000 грн</span>
-                    
+                                            
                                             <div class="card__info__inner">
                                                 <img
                                                 class="card__info__image"
@@ -877,7 +957,7 @@
                                     </div>
                                 </div>
                             </li>
-
+                            
                             <li class="catalog__item">
                                 <div class="catalog__card">
                                     <picture>
@@ -886,19 +966,19 @@
                                         media="(max-width: 425px)"
                                         srcset="./images/catalog/mobile/webp/2x/mobile-7@2x.webp 2x, ./images/catalog/mobile/webp/1x/mobile-7.webp 1x"
                                         >
-                    
+                                        
                                         <source
                                         type="image/webp"
                                         srcset="./images/catalog/desktop/webp/2x/desktop-7@2x.webp 2x, ./images/catalog/desktop/webp/1x/desktop-7.webp 1x"
                                         >
-                    
+                                        
                                         <!-- jpeg -->
-                    
+                                        
                                         <source
                                         media="(max-width: 425px)"
                                         srcset="./images/catalog/mobile/2x/mobile-7@2x.jpg 2x, ./images/catalog/mobile/1x/mobile-7.jpg 1x"
                                         >
-                    
+                                        
                                         <img
                                         class="card__image"
                                         src="./images/catalog/desktop/1x/desktop-7.jpg"
@@ -908,13 +988,13 @@
                                         height="180"
                                         >
                                     </picture>
-                    
+                                    
                                     <div class="card__inner">
                                         <h3 class="card__heading">
                                             <span class="card__heading__text">Вариант OS-77</span>
                                             <span class="card__heading__text">«Milano»</span>
                                         </h3>
-                    
+                                        
                                         <div class="card__info">
                                             <div class="card__info__inner">
                                                 <img
@@ -926,9 +1006,9 @@
                                                 >
                                                 <span class="card__info__text">7,5х9 м</span>
                                             </div>
-                    
+                                            
                                             <span class="card__price">3 260 000 грн</span>
-                    
+                                            
                                             <div class="card__info__inner">
                                                 <img
                                                 class="card__info__image"
@@ -947,7 +1027,7 @@
                                     </div>
                                 </div>
                             </li>
-
+                            
                             <li class="catalog__item">
                                 <div class="catalog__card">
                                     <picture>
@@ -956,19 +1036,19 @@
                                         media="(max-width: 425px)"
                                         srcset="./images/catalog/mobile/webp/2x/mobile-8@2x.webp 2x, ./images/catalog/mobile/webp/1x/mobile-8.webp 1x"
                                         >
-                    
+                                        
                                         <source
                                         type="image/webp"
                                         srcset="./images/catalog/desktop/webp/2x/desktop-8@2x.webp 2x, ./images/catalog/desktop/webp/1x/desktop-8.webp 1x"
                                         >
-                    
+                                        
                                         <!-- jpeg -->
-                    
+                                        
                                         <source
                                         media="(max-width: 425px)"
                                         srcset="./images/catalog/mobile/2x/mobile-8@2x.jpg 2x, ./images/catalog/mobile/1x/mobile-8.jpg 1x"
                                         >
-                    
+                                        
                                         <img
                                         class="card__image"
                                         src="./images/catalog/desktop/1x/desktop-8.jpg"
@@ -978,13 +1058,13 @@
                                         height="180"
                                         >
                                     </picture>
-                    
+                                    
                                     <div class="card__inner">
                                         <h3 class="card__heading">
                                             <span class="card__heading__text">Вариант ST-22</span>
                                             <span class="card__heading__text">«Classic»</span>
                                         </h3>
-                    
+                                        
                                         <div class="card__info">
                                             <div class="card__info__inner">
                                                 <img
@@ -996,9 +1076,9 @@
                                                 >
                                                 <span class="card__info__text">7,5х9 м</span>
                                             </div>
-                    
+                                            
                                             <span class="card__price">1 200 000 грн</span>
-                    
+                                            
                                             <div class="card__info__inner">
                                                 <img
                                                 class="card__info__image"
@@ -1017,7 +1097,7 @@
                                     </div>
                                 </div>
                             </li>
-
+                            
                             <li class="catalog__item">
                                 <div class="catalog__card">
                                     <picture>
@@ -1026,19 +1106,19 @@
                                         media="(max-width: 425px)"
                                         srcset="./images/catalog/mobile/webp/2x/mobile-9@2x.webp 2x, ./images/catalog/mobile/webp/1x/mobile-9.webp 1x"
                                         >
-                    
+                                        
                                         <source
                                         type="image/webp"
                                         srcset="./images/catalog/desktop/webp/2x/desktop-9@2x.webp 2x, ./images/catalog/desktop/webp/1x/desktop-9.webp 1x"
                                         >
-                    
+                                        
                                         <!-- jpeg -->
-                    
+                                        
                                         <source
                                         media="(max-width: 425px)"
                                         srcset="./images/catalog/mobile/2x/mobile-9@2x.jpg 2x, ./images/catalog/mobile/1x/mobile-9.jpg 1x"
                                         >
-                    
+                                        
                                         <img
                                         class="card__image"
                                         src="./images/catalog/desktop/1x/desktop-9.jpg"
@@ -1048,13 +1128,13 @@
                                         height="180"
                                         >
                                     </picture>
-                    
+                                    
                                     <div class="card__inner">
                                         <h3 class="card__heading">
                                             <span class="card__heading__text">Вариант ST-65</span>
                                             <span class="card__heading__text">«Elegant»</span>
                                         </h3>
-                    
+                                        
                                         <div class="card__info">
                                             <div class="card__info__inner">
                                                 <img
@@ -1066,9 +1146,9 @@
                                                 >
                                                 <span class="card__info__text">7,5х9 м</span>
                                             </div>
-                    
+                                            
                                             <span class="card__price">2 300 000 грн</span>
-                    
+                                            
                                             <div class="card__info__inner">
                                                 <img
                                                 class="card__info__image"
@@ -1087,7 +1167,7 @@
                                     </div>
                                 </div>
                             </li>
-
+                            
                             <li class="catalog__item">
                                 <div class="catalog__card">
                                     <picture>
@@ -1096,19 +1176,19 @@
                                         media="(max-width: 425px)"
                                         srcset="./images/catalog/mobile/webp/2x/mobile-10@2x.webp 2x, ./images/catalog/mobile/webp/1x/mobile-10.webp 1x"
                                         >
-                    
+                                        
                                         <source
                                         type="image/webp"
                                         srcset="./images/catalog/desktop/webp/2x/desktop-10@2x.webp 2x, ./images/catalog/desktop/webp/1x/desktop-10.webp 1x"
                                         >
-                    
+                                        
                                         <!-- jpeg -->
-                    
+                                        
                                         <source
                                         media="(max-width: 425px)"
                                         srcset="./images/catalog/mobile/2x/mobile-10@2x.jpg 2x, ./images/catalog/mobile/1x/mobile-10.jpg 1x"
                                         >
-                    
+                                        
                                         <img
                                         class="card__image"
                                         src="./images/catalog/desktop/1x/desktop-10.jpg"
@@ -1118,13 +1198,13 @@
                                         height="180"
                                         >
                                     </picture>
-                    
+                                    
                                     <div class="card__inner">
                                         <h3 class="card__heading">
                                             <span class="card__heading__text">Вариант ST-16</span>
                                             <span class="card__heading__text">«Classic Plus»</span>
                                         </h3>
-                    
+                                        
                                         <div class="card__info">
                                             <div class="card__info__inner">
                                                 <img
@@ -1136,9 +1216,9 @@
                                                 >
                                                 <span class="card__info__text">7,5х9 м</span>
                                             </div>
-                    
+                                            
                                             <span class="card__price">920 000 грн</span>
-                    
+                                            
                                             <div class="card__info__inner">
                                                 <img
                                                 class="card__info__image"
@@ -1157,7 +1237,7 @@
                                     </div>
                                 </div>
                             </li>
-
+                            
                             <li class="catalog__item">
                                 <div class="catalog__card">
                                     <picture>
@@ -1166,19 +1246,19 @@
                                         media="(max-width: 425px)"
                                         srcset="./images/catalog/mobile/webp/2x/mobile-11@2x.webp 2x, ./images/catalog/mobile/webp/1x/mobile-11.webp 1x"
                                         >
-                    
+                                        
                                         <source
                                         type="image/webp"
                                         srcset="./images/catalog/desktop/webp/2x/desktop-11@2x.webp 2x, ./images/catalog/desktop/webp/1x/desktop-11.webp 1x"
                                         >
-                    
+                                        
                                         <!-- jpeg -->
-                    
+                                        
                                         <source
                                         media="(max-width: 425px)"
                                         srcset="./images/catalog/mobile/2x/mobile-11@2x.jpg 2x, ./images/catalog/mobile/1x/mobile-11.jpg 1x"
                                         >
-                    
+                                        
                                         <img
                                         class="card__image"
                                         src="./images/catalog/desktop/1x/desktop-11.jpg"
@@ -1188,13 +1268,13 @@
                                         height="180"
                                         >
                                     </picture>
-                    
+                                    
                                     <div class="card__inner">
                                         <h3 class="card__heading">
                                             <span class="card__heading__text">Вариант ST-23</span>
                                             <span class="card__heading__text">«ECO Soul»</span>
                                         </h3>
-                    
+                                        
                                         <div class="card__info">
                                             <div class="card__info__inner">
                                                 <img
@@ -1206,9 +1286,9 @@
                                                 >
                                                 <span class="card__info__text">7,5х9 м</span>
                                             </div>
-                    
+                                            
                                             <span class="card__price">2 150 000 грн</span>
-                    
+                                            
                                             <div class="card__info__inner">
                                                 <img
                                                 class="card__info__image"
@@ -1227,7 +1307,7 @@
                                     </div>
                                 </div>
                             </li>
-
+                            
                             <li class="catalog__item">
                                 <div class="catalog__card">
                                     <picture>
@@ -1236,19 +1316,19 @@
                                         media="(max-width: 425px)"
                                         srcset="./images/catalog/mobile/webp/2x/mobile-12@2x.webp 2x, ./images/catalog/mobile/webp/1x/mobile-12.webp 1x"
                                         >
-                    
+                                        
                                         <source
                                         type="image/webp"
                                         srcset="./images/catalog/desktop/webp/2x/desktop-12@2x.webp 2x, ./images/catalog/desktop/webp/1x/desktop-12.webp 1x"
                                         >
-                    
+                                        
                                         <!-- jpeg -->
-                    
+                                        
                                         <source
                                         media="(max-width: 425px)"
                                         srcset="./images/catalog/mobile/2x/mobile-12@2x.jpg 2x, ./images/catalog/mobile/1x/mobile-12.jpg 1x"
                                         >
-                    
+                                        
                                         <img
                                         class="card__image"
                                         src="./images/catalog/desktop/1x/desktop-12.jpg"
@@ -1258,13 +1338,13 @@
                                         height="180"
                                         >
                                     </picture>
-                    
+                                    
                                     <div class="card__inner">
                                         <h3 class="card__heading">
                                             <span class="card__heading__text">Вариант ST-99</span>
                                             <span class="card__heading__text">«Edinburgh»</span>
                                         </h3>
-                    
+                                        
                                         <div class="card__info">
                                             <div class="card__info__inner">
                                                 <img
@@ -1276,9 +1356,9 @@
                                                 >
                                                 <span class="card__info__text">7,5х9 м</span>
                                             </div>
-                    
+                                            
                                             <span class="card__price">2 458 000 грн</span>
-                    
+                                            
                                             <div class="card__info__inner">
                                                 <img
                                                 class="card__info__image"
@@ -1298,6 +1378,50 @@
                                 </div>
                             </li>
                         </ul>
+                        
+                        <div class="catalog__create">
+                            <div class="catalog__create__inner">
+                                <h3 class="catalog__create__heading">Нет подходящего проекта?</h3>
+                                
+                                <p class="catalog__create__text">
+                                    Мы разработаем проект индивидуально под ваш запрос с помощью 3D-макета
+                                </p>
+                                
+                                <a class="catalog__create__link" href="#">Разработать проект</a>
+                            </div>
+                            
+                            <picture>
+                                <source
+                                type="image/webp"
+                                media="(max-width: 425px)"
+                                srcset="./images/create-project/mobile/webp/2x/mobile-1@2x.webp 2x, ./images/create-project/mobile/webp/1x/mobile-1.webp 1x"
+                                >
+                                
+                                <source
+                                type="image/webp"
+                                srcset="./images/create-project/desktop/webp/2x/desktop-1@2x.webp 2x, ./images/create-project/desktop/webp/1x/desktop-1.webp 1x"
+                                >
+                                
+                                <!-- jpeg -->
+                                
+                                <source
+                                media="(max-width: 425px)"
+                                srcset="./images/create-project/mobile/2x/mobile-1@2x.jpg 2x, ./images/create-project/mobile/1x/mobile-1.jpg 1x"
+                                >
+                                
+                                <img
+                                class="catalog__create__image"
+                                src="./images/create-project/desktop/1x/desktop-1.jpg"
+                                srcset="./images/create-project/desktop/2x/desktop-1@2x.jpg 2x, ./images/create-project/desktop/1x/desktop-1.jpg 1x"
+                                alt=""
+                                width="365"
+                                height="290"
+                                >
+                            </picture>
+                        </div>
+
+                        <button class="catalog__more" type="button">Показать еще больше</button>
+
                     </div>
                 </div>
             </div>
