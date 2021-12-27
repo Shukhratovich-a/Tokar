@@ -1,0 +1,17 @@
+.navigation {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.navigation__text {
+    display: block;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 17px;
+    color: $gray3;
+
+    & + & {
+        margin-left: 3px;
+    }
+}
