@@ -1,6 +1,5 @@
 .catalog .container {
     margin-bottom: 145px;
-    padding-top: 20px;
 }
 
 .cotalog__mobile-bar {
@@ -55,10 +54,6 @@
 }
 
 @media only screen and(max-width: 768px) {
-    .catalog .container {
-        padding-top: 12px;
-    }
-
     .cotalog__mobile-bar {
         display: flex;
         align-items: center;
