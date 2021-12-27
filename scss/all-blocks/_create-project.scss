@@ -31,17 +31,8 @@
 }
 
 .catalog__create__link {
-    display: block;
     max-width: 280px;
-    padding: 23px;
-    font-weight: bold;
-    line-height: 16px;
-    text-align: center;
-    text-decoration: none;
-    color: $color3;
-    background: linear-gradient(180deg, #f39c32 0%, #cb8734 100%);
-    box-shadow: 0px 4px 4px rgba(203, 135, 52, 0.2);
-    border-radius: 4px;
+    width: 100%;
 }
 
 .catalog__create__image {
