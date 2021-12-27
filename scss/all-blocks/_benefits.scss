@@ -1,0 +1,107 @@
+.benefits {
+    background: #ffffff;
+    box-shadow: 0px 0px 30px rgba(43, 42, 40, 0.08);
+    border-radius: 8px;
+    margin: 100px 0;
+  }
+  .benefit__info {
+    padding: 60px;
+  }
+  .benefits__title {
+    margin-top: 0;
+    margin-bottom: 33px;
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 58px;
+    color: #2b2a28;
+  }
+  .benefit__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+  }
+  .benefit__item {
+    max-width: 260px;
+    width: 100%;
+  }
+  .benefit__item + .benefit__item {
+    margin-left: 60px;
+  }
+  .benefit__title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 30px;
+    color: #2b2a28;
+  }
+  .benefit__item:first-child::before{
+      margin-bottom: 0px;
+      display: inline-block;
+      content: '';
+      width: 62px;
+      height: 62px;
+      background-image: url('../../images/hero/paint.svg');
+  }
+  .benefit__item:nth-child(2):before{
+      margin-bottom: 0px;
+      display: inline-block;
+      content: '';
+      width: 62px;
+      height: 62px;
+      background-image: url('../../images/hero/house.svg');
+  }
+  .benefit__item:nth-child(3):before{
+      margin-bottom: 0px;
+      display: inline-block;
+      content: '';
+      width: 62px;
+      height: 62px;
+      background-image: url('../../images/hero/nike.svg');
+  }
+  .benefit__item:nth-child(4):before{
+      margin-bottom: 0px;
+      display: inline-block;
+      content: '';
+      width: 62px;
+      height: 62px;
+      background-image: url('../../images/hero/work.svg');
+  }
+  .benefit__text{
+      font-family: "Gilroy";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 30px;
+      color: #2b2a28;  
+  }
+  @media only screen and (max-width:950px){
+      .benefit__item + .benefit__item {
+          margin-left: 30px;
+  }
+  
+  }
+  @media only screen and (max-width:768px){
+      .benefits__title{
+          text-align: center;
+      }
+      .benefit__list {
+          flex-direction: column;
+          // justify-content: center;
+          align-items: center;
+          text-align: center;
+          margin: 0 auto;
+        }
+        .benefit__item {
+          max-width: 320px;
+          width: 100%;
+        }
+        .benefit__item + .benefit__item {
+          margin-left: 0px;
+  }
+  }
