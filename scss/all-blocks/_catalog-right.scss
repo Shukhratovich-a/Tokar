@@ -255,6 +255,10 @@
 }
 
 @media only screen and(max-width: 425px) {
+    .catalog .container {
+        margin-bottom: 85px;
+    }
+
     .catalog__top {
         margin-bottom: 10px;
     }
@@ -270,7 +274,8 @@
 
     .catalog__item {
         margin-bottom: 10px;
-        max-width: 300px;
+        max-width: 100%;
+        width: 100%;
         height: auto;
 
         &:nth-child(5) {
@@ -280,5 +285,9 @@
         &:nth-child(5) ~ .catalog__item {
             display: none;
         }
+    }
+
+    .catalog__card {
+        width: 100%;
     }
 }
