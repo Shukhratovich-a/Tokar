@@ -10,3 +10,115 @@
     font-size: 36px;
     line-height: 58px;
 }
+
+.contacts__left {
+    max-width: 565px;
+    width: 100%;
+}
+
+.contacts__text {
+    margin-top: 0;
+    margin-bottom: 46px;
+    font-size: 30px;
+    line-height: 45px;
+}
+
+.contacts__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    padding-top: 32px;
+    padding-right: 44px;
+    background: #ffffff;
+    box-shadow: 0px 0px 30px rgba(43, 42, 40, 0.08);
+    border-radius: 0px 40px 0px 0px;
+
+    &::after {
+        content: "";
+        display: block;
+        width: 62px;
+        height: 62px;
+    }
+
+    &:first-child::after{
+        background-image: url("../images/contacts/telephone.svg");
+    }
+
+    &:nth-child(2)::after{
+        background-image: url("../images/contacts/mail.svg");
+    }
+
+    &:nth-child(3)::after{
+        background-image: url("../images/contacts/graphic.svg");
+    }
+
+    &:nth-child(4)::after{
+        background-image: url("../images/contacts/messenger.svg");
+    }
+
+    & + & {
+        margin-top: 30px;
+    }
+
+    .socials__list {
+        margin-bottom: 20px;
+    }
+
+    .social__icon {
+        width: 46px;
+        height: 46px;
+    }
+}
+
+.contact__title {
+    margin-top: 0;
+    margin-bottom: 6px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+.contact__call {
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+
+    &:nth-child(2n + 1) {
+        margin-bottom: 16px;
+    }
+}
+
+.contact__call__text {
+    display: block;
+    flex-shrink: 0;
+    width: 131px;
+    margin-right: 14px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.contact__call__number {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: $color1;
+    text-decoration: none;
+}
+
+.contact__link {
+    display: block;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 17px;
+    color: $color5;
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+}
