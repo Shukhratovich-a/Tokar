@@ -697,76 +697,76 @@
             content: "";
         }
     }
-}
 
-&:nth-child(3)::before {
-    position: absolute;
-    top: -60px;
-    right: 90px;
-    content: "";
-    background-image: url(../../images/projects/projects-opt/Производство-конструкции.png);
-    background-size: 268px 130px;
-    display: block;
-    background-repeat: no-repeat;
-}
+    &:nth-child(3)::before {
+        position: absolute;
+        top: -60px;
+        right: 90px;
+        content: "";
+        background-image: url(../../images/projects/projects-opt/Производство-конструкции.png);
+        background-size: 268px 130px;
+        display: block;
+        background-repeat: no-repeat;
+    }
 
-&:last-child::before {
-    position: absolute;
-    top: -45px;
-    right: 120px;
-    content: "";
-    background-image: url(../../images/projects/projects-opt/Монтаж.png);
-    background-size: 206px 169px;
-    display: block;
-    background-repeat: no-repeat;
-}
+    &:last-child::before {
+        position: absolute;
+        top: -45px;
+        right: 120px;
+        content: "";
+        background-image: url(../../images/projects/projects-opt/Монтаж.png);
+        background-size: 206px 169px;
+        display: block;
+        background-repeat: no-repeat;
+    }
 
-&:first-child::after {
-    position: absolute;
-    left: 155px;
-    bottom: -50px;
-    background-image: url(../../images/projects/projects-opt/01.svg);
-    background-repeat: no-repeat;
-    display: block;
-    width: 255px;
-    height: 140px;
-    content: "";
-}
+    &:first-child::after {
+        position: absolute;
+        left: 155px;
+        bottom: -50px;
+        background-image: url(../../images/projects/projects-opt/01.svg);
+        background-repeat: no-repeat;
+        display: block;
+        width: 255px;
+        height: 140px;
+        content: "";
+    }
 
-&:nth-child(2)::after {
-    position: absolute;
-    right: 50px;
-    bottom: -50px;
-    background-image: url(../../images/projects/projects-opt/02.svg);
-    background-repeat: no-repeat;
-    display: block;
-    width: 255px;
-    height: 140px;
-    content: "";
-}
+    &:nth-child(2)::after {
+        position: absolute;
+        right: 50px;
+        bottom: -50px;
+        background-image: url(../../images/projects/projects-opt/02.svg);
+        background-repeat: no-repeat;
+        display: block;
+        width: 255px;
+        height: 140px;
+        content: "";
+    }
 
-&:nth-child(3)::after {
-    position: absolute;
-    right: 50px;
-    bottom: -50px;
-    background-image: url(../../images/projects/projects-opt/03.svg);
-    background-repeat: no-repeat;
-    display: block;
-    width: 255px;
-    height: 140px;
-    content: "";
-}
+    &:nth-child(3)::after {
+        position: absolute;
+        right: 50px;
+        bottom: -50px;
+        background-image: url(../../images/projects/projects-opt/03.svg);
+        background-repeat: no-repeat;
+        display: block;
+        width: 255px;
+        height: 140px;
+        content: "";
+    }
 
-&:last-child::after {
-    position: absolute;
-    right: 50px;
-    bottom: -45px;
-    background-image: url(../../images/projects/projects-opt/04.svg);
-    background-repeat: no-repeat;
-    display: block;
-    width: 255px;
-    height: 140px;
-    content: "";
+    &:last-child::after {
+        position: absolute;
+        right: 50px;
+        bottom: -45px;
+        background-image: url(../../images/projects/projects-opt/04.svg);
+        background-repeat: no-repeat;
+        display: block;
+        width: 255px;
+        height: 140px;
+        content: "";
+    }
 }
 
 .build__item__heading {
