@@ -5,3 +5,7 @@
 .link{
     @include link;
 }
+
+.link--back{
+    @include link--back;
+}
