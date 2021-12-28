@@ -40,3 +40,26 @@
         background-repeat: no-repeat;
     }
 }
+
+@mixin link--back {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    color: #cb8734;
+    text-decoration: none;
+
+    &::before {
+        content: "";
+        transform: rotate(180deg);
+        display: block;
+        flex-shrink: 0;
+        width: 30px;
+        height: 30px;
+        margin-right: 9px;
+        background-image: url('../images/link.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
