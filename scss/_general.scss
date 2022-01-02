@@ -76,4 +76,10 @@ main {
             }
         }
     }
+
+    .consultation__inner {
+        &::after {
+            background-image: url("../images/consultation/consultation@2x.jpg");
+        }
+    }
 }
