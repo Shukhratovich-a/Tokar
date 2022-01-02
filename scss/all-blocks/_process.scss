@@ -3,12 +3,12 @@
 }
 
 .process__title {
-    font-family: $font;
-    font-style: normal;
+    margin-top: 0;
+    margin-bottom: 40px;
     font-weight: bold;
     font-size: 36px;
     line-height: 58px;
-    color: #2b2a28;
+    color: $color1;
 }
 
 .process__list {
@@ -73,7 +73,7 @@
     font-weight: bold;
     font-size: 16px;
     line-height: 24px;
-    color: #2b2a28;
+    color: $color1;
 }
 
 .process__sublist {
@@ -245,7 +245,7 @@
         font-weight: 800;
         font-size: 24px;
         line-height: 30px;
-        color: #2b2a28;
+        color: $color1;
     }
 
     .process__sublist__item::before {
