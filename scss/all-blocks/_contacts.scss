@@ -2,19 +2,6 @@
     padding-bottom: 145px;
 }
 
-.contacts__top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 35px;
-}
-
-.contacts__heading {
-    margin: 0;
-    font-size: 36px;
-    line-height: 58px;
-}
-
 .contacts__left {
     max-width: 565px;
     width: 100%;
@@ -329,11 +316,6 @@
 }
 
 @media only screen and(max-width: 810px) {
-    .contacts__heading {
-        font-size: 32px;
-        line-height: 42px;
-    }
-
     .contact__info {
         strong {
             font-size: 16px;
@@ -396,21 +378,9 @@
     }
 }
 
-@media only screen and(max-width: 700px) {
-    .contacts__top__link {
-        display: none;
-    }
-}
-
 @media only screen and(max-width: 590px) {
     .contacts .container {
         padding-bottom: 60px;
-    }
-
-    .contacts__heading {
-        font-weight: 800;
-        font-size: 24px;
-        line-height: 30px;
     }
 
     .contacts__text {
@@ -509,14 +479,14 @@
 }
 
 @media only screen and(max-width: 350px) {
-    .contact{
+    .contact {
         padding: 24px;
     }
 
-    .contact__call__number{
+    .contact__call__number {
         font-size: 14px;
     }
-    
+
     .contact__link {
         font-size: 12px;
         line-height: 16px;

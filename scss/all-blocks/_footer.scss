@@ -279,13 +279,15 @@
         margin-bottom: 0;
     }
 
+    .footer .nav__left__item {
+        &:first-child {
+            border-top: 1px solid $color8;
+        }
+    }
+
     .footer .nav__left__link{
         padding-right: 0;
         padding-left: 0;
-    }
-
-    .footer .nav__item{
-        padding: 0 20px;
     }
 
     .footer .nav__right__item {
