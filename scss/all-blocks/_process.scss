@@ -31,12 +31,14 @@
     position: relative;
     max-width: 266px;
     width: 100%;
+    margin-top: 28px;
     margin-right: 24px;
 }
 
 .process__item__text {
     width: calc(100% - 25px);
     margin: 0;
+    margin-bottom: 20px;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 17px;
@@ -66,7 +68,7 @@
 
 .process__item__heading {
     width: 240px;
-    margin-top: 20px;
+    margin: 0;
     margin-left: 18px;
     font-family: $font;
     font-style: normal;
@@ -98,27 +100,27 @@
 }
 
 .process__sublist__item::before {
+    content: "";
     display: block;
     width: 62px;
     height: 62px;
     margin-bottom: 24px;
     background-repeat: no-repeat;
     background-size: 62px 62px;
-    content: "";
 }
 
 .process__item:first-child {
     .process__sublist__item {
         &:first-child::before {
-            background-image: url(../../images/process/Group-104.svg);
+            background-image: url(../images/process/Group-104.svg);
         }
 
         &:nth-child(2)::before {
-            background-image: url(../../images/process/Group-105.svg);
+            background-image: url(../images/process/Group-105.svg);
         }
 
         &:nth-child(3)::before {
-            background-image: url(../../images/process/shtamp.png);
+            background-image: url(../images/process/shtamp.png);
         }
     }
 }
@@ -126,15 +128,15 @@
 .process__item:nth-child(2) {
     .process__sublist__item {
         &:first-child::before {
-            background-image: url(../../images/process/Group-107.svg);
+            background-image: url(../images/process/Group-107.svg);
         }
 
         &:nth-child(2)::before {
-            background-image: url(../../images/process/Group.png);
+            background-image: url(../images/process/Group.png);
         }
 
         &:nth-child(3)::before {
-            background-image: url(../../images/process/Group-109.svg);
+            background-image: url(../images/process/Group-109.svg);
         }
     }
 }
@@ -142,15 +144,15 @@
 .process__item:nth-child(3) {
     .process__sublist__item {
         &:first-child::before {
-            background-image: url(../../images/process/Group-110.svg);
+            background-image: url(../images/process/Group-110.svg);
         }
 
         &:nth-child(2)::before {
-            background-image: url(../../images/process/Group-111.svg);
+            background-image: url(../images/process/Group-111.svg);
         }
 
         &:nth-child(3)::before {
-            background-image: url(../../images/process/Group-112.svg);
+            background-image: url(../images/process/Group-112.svg);
         }
     }
 }
@@ -163,35 +165,56 @@
 }
 
 @media only screen and(max-width: 1000px) {
-    .process__inner{
+    .process__inner {
         max-width: 240px;
     }
 }
 
 @media only screen and (max-width: 950px) {
+    .process__inner {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
     .process__item {
         flex-direction: column;
     }
 }
 
 @media only screen and (max-width: 650px) {
+    .process .container {
+        margin-bottom: 100px;
+    }
+
     .process__inner {
         max-width: 100%;
+        margin-bottom: 0px;
+    }
+
+    .process__item {
+        margin-bottom: 20px;
+
+        & + & {
+            margin-top: 0;
+        }
     }
 
     .process__item__text {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding-right: 23px;
         width: 100%;
+        margin-bottom: 0;
+        padding-right: 23px;
         text-align: center;
 
         &::after {
             content: "";
             width: 12px;
             height: 7px;
-            background-image: url(../../images/process/marker-1.svg);
+            background-image: url('../images/process/marker-1.svg');
+            transform: rotate(180deg);
+            transition: transform 0.2s ease;
         }
     }
 
@@ -199,28 +222,42 @@
         content: none;
     }
 
-    .process__item:nth-child(2) {
-        .process__item__heading {
-            display: none;
-        }
-
-        .process__sublist {
-            display: none;
-        }
+    .process__item__heading {
+        display: none;
+        width: 100%;
     }
 
-    .process__item:nth-child(3) {
+    .process__sublist {
+        display: none;
+    }
+
+    .process__item--active {
+        margin-bottom: 0;
+
+        .process__inner {
+            margin-bottom: 20px;
+        }
+
+        .process__item__text {
+            margin-bottom: 20px;
+
+            &::after{
+                transform: rotate(0deg);
+            }
+        }
+
         .process__item__heading {
-            display: none;
+            display: block;
         }
 
         .process__sublist {
-            display: none;
+            display: flex;
+            margin-bottom: 40px;
         }
     }
 }
 
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 635px) {
     .process__sublist {
         flex-direction: column;
         margin: 0 auto;
@@ -237,20 +274,48 @@
 }
 
 @media only screen and (max-width: 425px) {
+    .process .container {
+        margin-bottom: 60px;
+    }
+
     .process__title {
-        max-width: 280px;
-        width: 100%;
-        font-family: $font;
-        font-style: normal;
+        margin-bottom: 14px;
         font-weight: 800;
         font-size: 24px;
         line-height: 30px;
-        color: $color1;
     }
 
-    .process__sublist__item::before {
-        width: 50px;
-        height: 50px;
-        background-size: 50px 50px;
+    .process__item {
+        margin-bottom: 10px;
+    }
+
+    .process__sublist {
+        width: 100%;
+    }
+
+    .process__sublist__item {
+        max-width: 100%;
+
+        & + & {
+            margin-top: 15px;
+        }
+
+        &::before {
+            width: 50px;
+            height: 50px;
+            background-size: contain;
+        }
+    }
+
+    .process__item--active {
+        margin-bottom: 0;
+
+        .process__inner {
+            margin-bottom: 16px;
+        }
+
+        .process__item__text {
+            margin-bottom: 16px;
+        }
     }
 }

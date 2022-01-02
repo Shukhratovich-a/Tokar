@@ -9,6 +9,10 @@ $('.dorpdown-toggle').click(function () {
     $(this).parent().parent().toggleClass('nav__item--active');
 });
 
+$('.process__item').click(function () {
+    $(this).toggleClass('process__item--active');
+});
+
 var rangeSlider = document.querySelector(".filter__slider");
 var rangeSliderPrice = document.querySelector(".filter__slider--price");
 
