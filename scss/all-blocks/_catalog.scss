@@ -90,6 +90,7 @@
 
     .filter {
         display: none;
+        // overflow: hidden;
     }
 
     .catalog__heading {
@@ -98,5 +99,15 @@
         font-size: 32px;
         line-height: 42px;
         text-align: center;
+    }
+}
+
+@media only screen and(max-width: 385px) {
+    .body--filter{
+        .catalog{
+            .container{
+                overflow-x: hidden;
+            }
+        }
     }
 }

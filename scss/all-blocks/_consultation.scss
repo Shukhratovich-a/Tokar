@@ -1,0 +1,214 @@
+.consultation .container{
+    margin-bottom: 145px;
+}
+
+.consultation__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 80px;
+    background-color: $color6;
+    border-radius: 0px 40px 0px 0px;
+
+    &::after {
+        content: "";
+        display: block;
+        margin: 5px;
+        margin-left: 0;
+        width: 430px;
+        height: 330px;
+        background-image: url("../images/consultation/consultation.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 0px 36px;
+        background-position: center;
+    }
+}
+
+.consultation__form {
+    max-width: 605px;
+    width: 100%;
+    margin-right: 24px;
+}
+
+.consultation__heading {
+    max-width: 380px;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 38px;
+}
+
+.consultation__form__inner {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.consultation__label {
+    display: flex;
+    align-items: center;
+    max-width: 390px;
+    width: 100%;
+    margin-right: 15px;
+    padding: 18px 21px;
+    background: $color3;
+    border: 1px solid $color8;
+    border-radius: 4px;
+
+    &::before {
+        background-image: url("../images/contacts/country-code.svg");
+    }
+}
+
+.consultation__input {
+    display: block;
+    width: 100%;
+    padding: 0;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    border: none;
+    outline: none;
+}
+
+.consultation__country {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+    width: 42px;
+    height: 20px;
+    margin-right: 16px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+
+    &::before {
+        content: "";
+        width: 30px;
+        height: 20px;
+        background-image: url("../images/contacts/country__flag.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.15));
+    }
+
+    &::after {
+        content: "";
+        width: 7px;
+        height: 4px;
+        background-image: url("../images/contacts/select.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+.consultation__form__button {
+    max-width: 200px;
+    padding: 21px;
+}
+
+.consultation__form__text {
+    margin: 0;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+
+    a {
+        font-weight: 600;
+        color: $color5;
+        text-decoration: none;
+    }
+}
+
+@media only screen and(max-width: 920px) {
+    .consultation__inner {
+        padding-left: 32px;
+    }
+}
+
+@media only screen and(max-width: 768px) {
+    .consultation .container{
+        margin-bottom: 100px;
+    }
+
+    .consultation__inner {
+        flex-direction: column;
+        padding: 0;
+        border-radius: 0px 40px;
+
+        &::after {
+            max-width: calc(100% - 10px);
+            width: 100%;
+            margin: 5px;
+            margin-top: 0;
+        }
+    }
+
+    .consultation__form {
+        min-width: 100%;
+        margin-right: 0;
+        padding: 32px;
+    }
+}
+
+@media only screen and(max-width: 520px) {
+    .consultation__form__inner {
+        flex-direction: column;
+    }
+
+    .consultation__heading {
+        font-size: 26px;
+    }
+
+    .consultation__label {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .consultation__form__button {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+@media only screen and(max-width: 425px) {
+    .consultation .container{
+        margin-bottom: 60px;
+    }
+
+    .consultation__inner {
+        &::after {
+            height: 200px;
+        }
+    }
+
+    .consultation__heading {
+        margin-bottom: 20px;
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .consultation__form {
+        padding: 41px 20px;
+        padding-bottom: 28px;
+    }
+
+    .consultation__form__inner {
+        margin-bottom: 20px;
+    }
+
+    .consultation__label {
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and(max-width: 330px) {
+    .consultation__form__text{
+        font-size: 13px;
+    }
+}
