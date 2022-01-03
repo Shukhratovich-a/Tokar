@@ -140,6 +140,8 @@
 }
 
 .build-types__image {
+    max-width: 100%;
+    width: 100%;
     margin-bottom: 40px;
     border-radius: 0px 100px;
     object-fit: cover;
@@ -225,6 +227,7 @@
         &::after {
             right: 50%;
             transform: translateX(50%);
+            background-position: center;
         }
 
         &:nth-child(2) {

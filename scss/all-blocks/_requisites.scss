@@ -2,6 +2,7 @@
     background-color: $color6;
 
     .container {
+        margin-bottom: 145px;
         padding: 145px 20px;
     }
 }
@@ -40,16 +41,16 @@
     background-color: $color3;
     box-shadow: 0px 0px 30px rgba(43, 42, 40, 0.08);
     border-radius: 8px;
-    
+
     &::before {
         margin-right: 40px;
         flex-shrink: 0;
-        content: '';
+        content: "";
         width: 62px;
         height: 62px;
         background-image: url(../../images/requisites/иконка-галочка.svg);
         background-repeat: no-repeat;
-        background-size: contain
+        background-size: contain;
     }
 }
 
@@ -84,9 +85,17 @@
     }
 }
 
+@media only screen and(max-width: 768px) {
+    .requisites .container {
+        margin-bottom: 100px;
+        padding: 100px 20px;
+    }
+}
+
 @media only screen and (max-width: 425px) {
     .requisites .container {
         padding: 60px 20px;
+        margin-bottom: 60px;
     }
 
     .requisites__title {
@@ -96,20 +105,20 @@
         font-size: 24px;
         line-height: 30px;
     }
-    
+
     .requisites__item {
         padding-top: 26px;
         padding-right: 26px;
         padding-left: 22px;
         padding-bottom: 26px;
-        
+
         &::before {
             width: 49px;
             height: 49px;
             margin-right: 25px;
         }
     }
-    
+
     .requisites__item__heading {
         font-size: 18px;
         line-height: 20px;
