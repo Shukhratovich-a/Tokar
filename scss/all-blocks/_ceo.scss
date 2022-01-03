@@ -1,0 +1,140 @@
+.ceo {
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 145px;
+    }
+
+    .ceo__text {
+        display: none;
+    }
+}
+
+.ceo__info {
+    max-width: 535px;
+    min-width: 455px;
+    width: 100%;
+    margin-right: 16px;
+
+    .ceo__text {
+        display: block;
+    }
+}
+
+.ceo__heading {
+    margin: 0;
+    margin-bottom: 12px;
+    font-size: 36px;
+    line-height: 48px;
+}
+
+.ceo__text {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 30px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.ceo__inner {
+    position: relative;
+}
+
+.ceo__pagination {
+    position: absolute;
+    bottom: 35px;
+    right: 50%;
+    transform: translate(50%);
+}
+
+.ceo__image {
+    max-width: 570px;
+    min-width: 460px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 0px 100px;
+}
+
+@media only screen and(max-width: 990px) {
+    .ceo {
+        .container {
+            flex-direction: column;
+        }
+
+        .ceo__text {
+            display: block;
+        }
+    }
+
+    .ceo__heading {
+        text-align: center;
+    }
+
+    .ceo__info {
+        .ceo__text:nth-of-type(1) ~ .ceo__text {
+            display: none;
+        }
+    }
+
+    .ceo__info {
+        max-width: 700px;
+        width: 100%;
+        margin: 0;
+    }
+
+    .ceo__image {
+        margin-bottom: 24px;
+    }
+
+    .ceo__text {
+        max-width: 700px;
+        width: 100%;
+    }
+}
+
+@media only screen and(max-width: 768px) {
+    .ceo .container {
+        margin-bottom: 100px;
+    }
+
+    .ceo__image {
+        min-width: unset;
+    }
+
+    .ceo__info{
+        min-width: unset;
+    }
+}
+
+@media only screen and(max-width: 500px) {
+    .ceo__heading {
+        margin-bottom: 20px;
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 30px;
+    }
+}
+
+@media only screen and(max-width: 425px) {
+    .ceo .container {
+        margin-bottom: 60px;
+    }
+
+    .ceo__image {
+        margin-bottom: 20px;
+        border-radius: 0px 36px;
+    }
+}
+
+@media only screen and(max-width: 375px) {
+    .ceo__heading{
+        max-width: 235px;
+        margin: 0 auto;
+    }
+}
