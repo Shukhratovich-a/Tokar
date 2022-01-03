@@ -89,6 +89,14 @@
     }
 }
 
+.works-types{
+    background-color: transparent;
+
+    .container{
+        margin-bottom: 0;
+    }
+}
+
 @media only screen and(max-width: 1030px) {
     .type__info {
         padding-right: 20px;
@@ -136,6 +144,13 @@
     .types .container {
         margin-bottom: 60px;
         padding: 60px 20px;
+    }
+
+    .works-types{
+        
+        .container{
+            margin-bottom: 0;
+        }
     }
 
     .types__heading {
