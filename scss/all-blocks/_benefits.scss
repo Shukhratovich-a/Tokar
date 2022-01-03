@@ -132,3 +132,45 @@
         margin: 0 auto;
     }
 }
+
+@media only screen and(max-width: 540px) {
+    .benefits__title {
+        font-size: 28px;
+    }
+}
+
+@media only screen and(max-width: 450px) {
+    .benefits__info {
+        padding: 40px 20px;
+    }
+
+    .benefits__title {
+        margin-bottom: 10px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .benefit__item {
+        max-width: 240px;
+        width: 100%;
+
+        & + & {
+            margin-top: 20px;
+        }
+    }
+
+    .benefit__item::before {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 14px;
+        background-size: contain;
+    }
+
+    .benefit__title {
+        line-height: 24px;
+    }
+
+    .benefit__text {
+        line-height: 24px;
+    }
+}
