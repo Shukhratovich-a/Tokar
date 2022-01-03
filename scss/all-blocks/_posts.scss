@@ -1,0 +1,158 @@
+.posts .container {
+    margin-bottom: 145px;
+}
+
+.posts {
+    .posts__pagination {
+        display: none;
+    }
+}
+
+.posts__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.posts__heading {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 36px;
+    line-height: 48px;
+}
+
+.posts__pagination {
+    display: flex;
+
+    .pagination__text {
+        color: $color5;
+    }
+
+    .pagination__button {
+        background-image: url("../images/posts/arrow-yellow.svg");
+    }
+}
+
+.posts__top {
+    .posts__pagination {
+        display: flex;
+    }
+}
+
+.posts__list {
+    display: flex;
+    column-gap: 30px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.post {
+    position: relative;
+    flex-grow: 1;
+    max-width: 370px;
+    width: 100%;
+
+    &::before {
+        content: " Архитектура";
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        padding: 11px 20px;
+        color: $color3;
+        background-color: $color5;
+        border-radius: 4px;
+    }
+}
+
+.post__image {
+    max-width: 370px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 27px;
+    border-radius: 0px 36px;
+    object-fit: cover;
+}
+
+.post__title {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.post__text {
+    margin: 0;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+@media only screen and(max-width: 1050px) {
+    .post__title {
+        font-size: 18px;
+    }
+}
+
+@media only screen and(max-width: 953px) {
+    .posts__list {
+        column-gap: 20px;
+    }
+}
+
+@media only screen and(max-width: 768px) {
+    .posts .container {
+        margin-bottom: 100px;
+    }
+
+    .posts .posts__pagination {
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .posts__top {
+        .posts__pagination {
+            display: none;
+        }
+    }
+
+    .post:nth-child(1) ~ .post {
+        display: none;
+    }
+
+    .post {
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .post__title {
+        font-size: 20px;
+        line-height: 28px;
+    }
+}
+
+@media only screen and(max-width: 425px) {
+    .posts .container {
+        margin-bottom: 60px;
+    }
+
+    .posts__top {
+        margin-bottom: 22px;
+    }
+
+    .posts__heading {
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .post__image {
+        margin-bottom: 17px;
+    }
+
+    .post__title {
+        margin-bottom: 8px;
+    }
+}
