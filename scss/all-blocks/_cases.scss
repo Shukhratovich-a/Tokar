@@ -1,132 +1,128 @@
-.cases--building {
+.cases {
     .container {
-        position: relative;
-        padding-bottom: 135px;
-        margin-bottom: 10px;
+        margin-bottom: 145px;
     }
 
-    .building__slider {
-        margin-bottom: 0;
-    }
-
-    .building__item:last-child {
+    .cases__pagination {
         display: none;
-    }
-
-    .building__price {
-        position: absolute;
-        right: 20px;
-        bottom: 0;
-        width: 370px;
-        padding: 50px 45px;
-        background: #ffffff;
-        box-shadow: 0px 0px 30px rgba(43, 42, 40, 0.08);
-        border-radius: 8px;
-
-        &__title {
-            margin-top: 0;
-            margin-bottom: 26px;
-            font-weight: normal;
-            font-size: 24px;
-            line-height: 32px;
-
-            strong {
-                font-weight: 400;
-                color: $color5;
-            }
-        }
-
-        &__button {
-            padding: 21px;
-        }
     }
 }
 
-@media only screen and(max-width: 920px) {
-    .cases--building {
-        .container {
-            margin-bottom: 32px;
-        }
+.cases__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
 
-        .contact__form {
-            margin-left: auto;
-            margin-bottom: 24px;
-        }
+    .cases__pagination {
+        display: block;
+    }
+}
+
+.cases__heading {
+    margin: 0;
+    font-size: 36px;
+    line-height: 58px;
+}
+
+.cases__pagination {
+    .pagination__button {
+        background-image: url("../../images/posts/arrow-yellow.svg");
+    }
+
+    .pagination__text {
+        color: $color5;
+    }
+}
+
+.cases__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+    row-gap: 30px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.cases__image {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    border-radius: 0px 40px;
+}
+
+@media only screen and(max-width: 900px) {
+    .cases__list {
+        column-gap: 15px;
+        row-gap: 15px;
     }
 }
 
 @media only screen and(max-width: 768px) {
-    .cases--building {
+    .cases {
         .container {
-            margin-bottom: 20px;
-            padding-bottom: 0;
+            margin-bottom: 100px;
         }
+    }
 
-        .building__slider {
-            margin-bottom: 40px;
-        }
+    .cases__list {
+        grid-template-columns: repeat(3, 1fr);
+    }
 
-        .building__price {
-            position: unset;
-            top: unset;
-            right: unset;
-            margin: 0 auto;
-        }
+    .cases__item:nth-child(6) ~ .cases__item {
+        display: none;
+    }
 
-        .building__item:last-child {
+    .cases__image {
+        border-radius: 0px 30px;
+    }
+}
+
+@media only screen and(max-width: 550px) {
+    .cases {
+        .cases__pagination {
             display: block;
         }
     }
 
-    .structures-cases {
-        .contact__form {
-            margin: 0 auto;
-            margin-bottom: 40px;
+    .cases__top {
+        .cases__pagination {
+            display: none;
         }
+    }
+
+    .cases__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cases__item:nth-child(4) ~ .cases__item {
+        display: none;
     }
 }
 
 @media only screen and(max-width: 425px) {
-    .cases--building {
-        .building__slider {
-            margin-bottom: 30px;
-        }
-
-        .building__price {
-            position: unset;
-            top: unset;
-            right: unset;
-            width: 100%;
-            margin: 0 auto;
-            padding: 33px 20px;
-
-            &__title {
-                max-width: 300px;
-                margin-bottom: 16px;
-                line-height: 30px;
-            }
-
-            &__button {
-                width: 100%;
-            }
+    .cases {
+        .container {
+            margin-bottom: 60px;
         }
     }
 
-    .structures-cases {
-        .contact__form {
-            max-width: 100%;
-            margin: 0 auto;
-            margin-bottom: 60px;
-            padding: 40px 20px;
+    .cases__top {
+        margin-bottom: 20px;
+    }
 
-            .contacts__text {
-                font-size: 20px;
-                line-height: 26px;
-            }
+    .cases__heading {
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 30px;
+    }
 
-            &__text {
-                width: 100%;
-            }
-        }
+    .cases__list{
+        margin-bottom: 20px;
+    }
+
+    .cases__pagination{
+        margin: 0 auto;
     }
 }
