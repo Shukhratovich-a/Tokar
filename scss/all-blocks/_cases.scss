@@ -2,6 +2,7 @@
     .container {
         position: relative;
         padding-bottom: 135px;
+        margin-bottom: 10px;
     }
 
     .building__slider {
@@ -42,5 +43,52 @@
 }
 
 @media only screen and(max-width: 768px) {
-    
+    .cases--building {
+        .container {
+            margin-bottom: 20px;
+            padding-bottom: 0;
+        }
+
+        .building__slider {
+            margin-bottom: 40px;
+        }
+
+        .building__price {
+            position: unset;
+            top: unset;
+            right: unset;
+            margin: 0 auto;
+        }
+
+        .building__item:last-child {
+            display: block;
+        }
+    }
+}
+
+@media only screen and(max-width: 425px) {
+    .cases--building {
+        .building__slider {
+            margin-bottom: 30px;
+        }
+
+        .building__price {
+            position: unset;
+            top: unset;
+            right: unset;
+            width: 100%;
+            margin: 0 auto;
+            padding: 33px 20px;
+
+            &__title {
+                max-width: 300px;
+                margin-bottom: 16px;
+                line-height: 30px;
+            }
+
+            &__button {
+                width: 100%;
+            }
+        }
+    }
 }
