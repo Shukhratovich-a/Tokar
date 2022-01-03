@@ -299,6 +299,12 @@
     }
 }
 
+@media only screen and(max-width: 425px) {
+    .about__item{
+        max-width: 100%;
+    }
+}
+
 @media only screen and(max-width: 357px) {
     .about__top {
         margin-bottom: 280px;
