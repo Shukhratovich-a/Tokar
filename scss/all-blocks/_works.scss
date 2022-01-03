@@ -122,7 +122,7 @@
     }
 }
 
-.works__more{
+.works__more {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -208,11 +208,9 @@
 }
 
 @media only screen and(max-width: 425px) {
-    .work:hover {
-        .work__inner {
-            transform: scale(1);
-            box-shadow: 0px 0px 30px rgba(43, 42, 40, 0.08);
-        }
+    .work:not(.work:nth-child(5)):hover .work__inner {
+        transform: scale(1);
+        box-shadow: 0px 0px 30px rgba(43, 42, 40, 0.08);
     }
 
     .work:nth-child(5):hover {
@@ -264,7 +262,7 @@
         }
     }
 
-    .work:nth-child(6) ~ .work{
+    .work:nth-child(6) ~ .work {
         display: none;
     }
 }
