@@ -48,6 +48,16 @@
     margin-right: 44px;
 }
 
+.hero__slider{
+    position: relative;
+}
+
+.hero-types__pagination{
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+}
+
 .hero .benefits {
     position: absolute;
     bottom: 0;

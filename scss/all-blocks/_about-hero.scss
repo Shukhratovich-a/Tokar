@@ -19,10 +19,20 @@
     }
 }
 
+.about-hero__slider{
+    position: relative;
+}
+
 .about-hero__image {
     max-width: 615px;
     width: 100%;
     height: auto;
+}
+
+.about-hero__pagination{
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
 }
 
 @media only screen and(max-width: 1000px) {
