@@ -1,7 +1,7 @@
 .projects {
-    background-image: url(../../images/projects/projects-opt/фон.png);
+    background-image: url('../images/projects/projects-opt/фон.png');
     background-repeat: no-repeat;
-    background-position: left calc(50% + 350px) bottom -5px;
+    background-position: left calc(50% + 350px) bottom 145px;
 }
 
 .projects .container {
@@ -118,9 +118,8 @@
 
 @media only screen and (max-width: 780px) {
     .projects {
-        background-image: url(../../images/projects/projects-opt/фон.png);
         background-repeat: no-repeat;
-        background-position: left calc(50% + 150px) bottom calc(50% + 250px);
+        background-position: left calc(50% + 150px) bottom calc(50% - 250px);
     }
 
     .projects .container {

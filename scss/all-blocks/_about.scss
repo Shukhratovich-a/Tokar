@@ -192,6 +192,16 @@
     margin: 0 auto;
 }
 
+.about--section__box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about--section__button{
+    margin-right: 45px;
+}
+
 @media only screen and(max-width: 1100px) {
     .thought__picture {
         width: 350px;
@@ -237,6 +247,23 @@
 
     .about__background {
         border-radius: 0px 60px;
+    }
+}
+
+@media only screen and(max-width: 600px) {
+    .about--section{
+        .about__list{
+            margin-bottom: 30px;
+        }
+    }
+    
+    .about--section__box{
+        flex-direction: column;
+    }
+
+    .about--section__button{
+        margin-right: 0;
+        margin-bottom: 20px;
     }
 }
 
