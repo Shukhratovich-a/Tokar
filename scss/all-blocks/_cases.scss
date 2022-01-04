@@ -15,7 +15,7 @@
     margin-bottom: 30px;
 
     .cases__pagination {
-        display: block;
+        display: flex;
     }
 }
 
@@ -27,7 +27,7 @@
 
 .cases__pagination {
     .pagination__button {
-        background-image: url("../../images/posts/arrow-yellow.svg");
+        background-image: url("../images/posts/arrow-yellow.svg");
     }
 
     .pagination__text {
@@ -82,7 +82,7 @@
 @media only screen and(max-width: 550px) {
     .cases {
         .cases__pagination {
-            display: block;
+            display: flex;
         }
     }
 
