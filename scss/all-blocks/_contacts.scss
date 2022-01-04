@@ -1,0 +1,494 @@
+.contacts .container {
+    padding-bottom: 145px;
+}
+
+.contacts__left {
+    max-width: 565px;
+    width: 100%;
+    margin-right: 32px;
+}
+
+.contacts__text {
+    margin-top: 0;
+    margin-bottom: 46px;
+    font-size: 30px;
+    line-height: 45px;
+}
+
+.contacts__list {
+    margin: 0;
+    margin-bottom: 75px;
+    padding: 0;
+    list-style-type: none;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    padding-top: 32px;
+    padding-right: 44px;
+    background: #ffffff;
+    box-shadow: 0px 0px 30px rgba(43, 42, 40, 0.08);
+    border-radius: 0px 40px 0px 0px;
+
+    &::after {
+        content: "";
+        display: block;
+        width: 62px;
+        height: 62px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    &:first-child::after {
+        background-image: url("../images/contacts/telephone.svg");
+    }
+
+    &:nth-child(2)::after {
+        background-image: url("../images/contacts/mail.svg");
+    }
+
+    &:nth-child(3)::after {
+        background-image: url("../images/contacts/graphic.svg");
+    }
+
+    &:nth-child(4)::after {
+        background-image: url("../images/contacts/messenger.svg");
+    }
+
+    & + & {
+        margin-top: 30px;
+    }
+
+    .socials__list {
+        margin-bottom: 20px;
+    }
+
+    .social__icon {
+        width: 46px;
+        height: 46px;
+    }
+}
+
+.contact__title {
+    margin-top: 0;
+    margin-bottom: 6px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+.contact__call {
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+
+    &:nth-child(2n + 1) {
+        margin-bottom: 16px;
+    }
+}
+
+.contact__call__text {
+    display: block;
+    flex-shrink: 0;
+    width: 131px;
+    margin-right: 14px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.contact__call__number {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: $color1;
+    text-decoration: none;
+}
+
+.contact__link {
+    display: inline-block;
+    padding-bottom: 1px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    color: $color5;
+    text-decoration: none;
+    border-bottom: 1px dashed $color5;
+}
+
+.contacts__bottom {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.contact__right {
+    max-width: 565px;
+}
+
+.contact__form {
+    margin-bottom: 30px;
+    padding: 72px;
+    padding-bottom: 50px;
+    padding-top: 60px;
+    background: $color3;
+    box-shadow: 0px 0px 30px rgba(43, 42, 40, 0.08);
+    border-radius: 0px 40px 0px 0px;
+
+    .contacts__text {
+        margin-bottom: 24px;
+    }
+}
+
+.contact__label {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 15px 23px;
+    background: $color3;
+    border: 1px solid $color8;
+    border-radius: 4px;
+
+    &:first-of-type {
+        margin-bottom: 10px;
+
+        &::before {
+            content: "";
+            display: block;
+            flex-shrink: 0;
+            width: 58px;
+            height: 26px;
+            background-image: url("../images/contacts/User.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+
+    &:nth-of-type(2) {
+        padding: 18px 23px;
+        margin-bottom: 20px;
+
+        &::before {
+            background-image: url("../images/contacts/country-code.svg");
+        }
+    }
+}
+
+.contact__input {
+    display: block;
+    width: 100%;
+    padding: 0;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    border: none;
+    outline: none;
+}
+
+.contact__country {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+    width: 42px;
+    height: 20px;
+    margin-right: 16px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+
+    &::before {
+        content: "";
+        width: 30px;
+        height: 20px;
+        background-image: url("../images/contacts/country__flag.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.15));
+    }
+
+    &::after {
+        content: "";
+        width: 7px;
+        height: 4px;
+        background-image: url("../images/contacts/select.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+.contact__form__button {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.contact__form__text {
+    width: 260px;
+    margin: 0;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+
+    a {
+        font-weight: 600;
+        color: $color5;
+        text-decoration: none;
+    }
+}
+
+.contacts__map {
+    max-width: 100%;
+    border: none;
+}
+
+.contact__info {
+    max-width: 530px;
+    margin-left: auto;
+
+    &__text {
+        margin-top: 0;
+        margin-bottom: 16px;
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    strong {
+        display: block;
+        margin-bottom: 23px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    &__button {
+        display: inline-block;
+        padding: 0;
+        padding-bottom: 1px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 16px;
+        color: $color5;
+        text-decoration: none;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px dashed $color5;
+        outline: none;
+    }
+}
+
+@media only screen and(max-width: 1190px) {
+    .contact__call {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media only screen and(max-width: 1130px) {
+    .contacts__text {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .contact__form {
+        padding: 48px;
+    }
+}
+
+@media only screen and(max-width: 1010px) {
+    .contacts__text {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .contact__info__text {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .contact__form {
+        padding: 32px;
+    }
+}
+
+@media only screen and(max-width: 810px) {
+    .contact__info {
+        strong {
+            font-size: 16px;
+        }
+    }
+    .contact__info__text {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .contact__link {
+        font-size: 15px;
+    }
+}
+
+@media only screen and(max-width: 768px) {
+    .contacts__text {
+        max-width: 500px;
+    }
+    .contacts__bottom {
+        flex-direction: column;
+    }
+
+    .contacts__left {
+        max-width: 100%;
+        margin: 0;
+        margin-bottom: 32px;
+    }
+
+    .contacts__list {
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .contact__call {
+        flex-direction: row;
+    }
+
+    .contact__info {
+        margin: 0;
+    }
+
+    .contact__right {
+        display: flex;
+        flex-direction: column-reverse;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .contacts__map {
+        max-width: 100%;
+        width: 100%;
+        margin-bottom: 30px;
+        border: none;
+        border-radius: 0px 40px 0px 0px;
+    }
+
+    .contact__form {
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and(max-width: 590px) {
+    .contacts .container {
+        padding-bottom: 60px;
+    }
+
+    .contacts__text {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .contact {
+        padding: 32px;
+    }
+
+    .contact__call {
+        flex-direction: column;
+    }
+}
+
+@media only screen and(max-width: 425px) {
+    .contacts__top {
+        margin-bottom: 10px;
+    }
+
+    .contacts__text {
+        margin-bottom: 20px;
+    }
+
+    .contacts__list {
+        margin-bottom: 30px;
+    }
+
+    .contact {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+
+        & + & {
+            margin-top: 20px;
+        }
+
+        &::after {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 11px;
+        }
+
+        &__title {
+            margin-bottom: 2px;
+            font-size: 20px;
+            line-height: 36px;
+        }
+
+        .contact__call {
+            margin-bottom: 10px;
+        }
+    }
+
+    .contact__call__text {
+        margin-bottom: 3px;
+    }
+
+    .contact__info__text {
+        margin-bottom: 7px;
+    }
+
+    .contact__info strong {
+        margin-bottom: 11px;
+    }
+
+    .contact__link {
+        line-height: 16px;
+    }
+
+    .contacts__map {
+        height: 420px;
+    }
+
+    .contact__form {
+        padding: 20px;
+        padding-top: 40px;
+        padding-bottom: 35px;
+
+        .contacts__text {
+            font-size: 20px;
+            line-height: 26px;
+        }
+
+        &__text {
+            font-size: 13px;
+            line-height: 20px;
+        }
+    }
+
+    .contact__form__button {
+        padding: 18px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
+
+@media only screen and(max-width: 350px) {
+    .contact {
+        padding: 24px;
+    }
+
+    .contact__call__number {
+        font-size: 14px;
+    }
+
+    .contact__link {
+        font-size: 12px;
+        line-height: 16px;
+    }
+}

@@ -1,0 +1,65 @@
+@mixin button($width: 280px, $padding: 25px, $font-size: 16px) {
+    display: block;
+    width: $width;
+    font-weight: bold;
+    font-size: $font-size;
+    line-height: 16px;
+    text-align: center;
+    padding: $padding;
+    white-space: nowrap;
+    color: $color3;
+    text-overflow: ellipsis;
+    text-decoration: none;
+    overflow: hidden;
+    border: none;
+    background: $gradient-color;
+    box-shadow: 0px 4px 4px rgba(203, 135, 52, 0.2);
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+}
+
+@mixin link {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    color: #cb8734;
+    text-decoration: none;
+
+    &::before {
+        content: "";
+        display: block;
+        flex-shrink: 0;
+        width: 30px;
+        height: 30px;
+        margin-right: 9px;
+        background-image: url('../images/link.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+@mixin link--back {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    color: #cb8734;
+    text-decoration: none;
+
+    &::before {
+        content: "";
+        transform: rotate(180deg);
+        display: block;
+        flex-shrink: 0;
+        width: 30px;
+        height: 30px;
+        margin-right: 9px;
+        background-image: url('../images/link.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}

@@ -1,0 +1,355 @@
+.footer {
+    background-color: $color6;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 90px;
+    padding-bottom: 60px;
+}
+
+.footer__logo.footer__logo--top {
+    display: none;
+}
+
+.footer .nav__left {
+    margin-right: 24px;
+
+    &__list {
+        margin-bottom: 40px;
+    }
+}
+
+.footer .nav__right {
+    max-width: 490px;
+
+    &__list {
+        justify-content: center;
+    }
+
+    .nav__right__item:nth-child(2) {
+        margin: 0 auto;
+    }
+}
+
+.nav__right__inner {
+    display: flex;
+    align-items: center;
+    margin-bottom: 34px;
+}
+
+.footer .nav__right__item {
+    padding: 10px 0;
+
+    &:last-child {
+        display: none;
+    }
+}
+
+.footer .nav__right__link {
+    padding: 15px 0;
+}
+
+.footer__logo {
+    display: flex;
+    align-items: center;
+    max-width: 490px;
+    margin-left: auto;
+    margin-bottom: 46px;
+    text-decoration: none;
+    color: $color1;
+}
+
+.footer__logo__image {
+    margin-right: 28px;
+}
+
+.footer__logo__text {
+    max-width: 240px;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 0.08em;
+}
+
+.footer {
+    .call-back__button {
+        display: none;
+        margin: 0;
+    }
+}
+
+.nav__right__inner .call-back__button {
+    display: block;
+}
+
+.footer__list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    .nav__sublist {
+        display: block;
+        margin: 0;
+    }
+}
+
+.footer__item {
+    &:nth-child(1) {
+        max-width: 185px;
+        margin-right: 54px;
+    }
+
+    &:nth-child(2) {
+        max-width: 140px;
+        width: 100%;
+        margin-right: 47px;
+    }
+
+    &:nth-child(3) {
+        max-width: 195px;
+        width: 100%;
+    }
+}
+
+.footer .socials {
+    margin-bottom: 46px;
+}
+
+.footer__description {
+    margin: 0;
+    padding: 30px 20px;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 22px;
+    text-align: center;
+    border-top: 1px solid $color8;
+    opacity: 0.7;
+}
+
+@media only screen and(max-width: 1120px) {
+    .footer__logo__image {
+        width: 174px;
+        height: 23px;
+    }
+
+    .footer__logo__text {
+        max-width: 255px;
+        font-size: 12px;
+    }
+}
+
+@media only screen and(max-width: 1100px) {
+    .footer__item {
+        &:nth-child(2) {
+            margin-right: 30px;
+        }
+    }
+}
+
+@media only screen and(max-width: 980px) {
+    .footer__item {
+        &:nth-child(1) {
+            margin-right: 32px;
+        }
+    }
+}
+
+@media only screen and(max-width: 945px) {
+    .footer .container {
+        padding-top: 60px;
+    }
+
+    .footer .nav__left__link {
+        padding: 15px 24px;
+    }
+
+    .footer__list .nav__sublist__link {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .footer__item {
+        &:nth-child(2) {
+            margin-right: 25px;
+        }
+    }
+}
+
+@media only screen and(max-width: 880px) {
+    .footer__logo__image {
+        width: 147px;
+        height: 20px;
+        margin-right: 21px;
+    }
+
+    .footer .call {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0;
+    }
+
+    .footer .telephone__info {
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+
+    .footer .call-back__button {
+        display: block;
+    }
+
+    .nav__right__inner .call-back__button {
+        display: none;
+    }
+
+    .footer .nav__right__item {
+        &:last-child {
+            display: block;
+        }
+    }
+
+    .footer .telephne__text {
+        text-align: left;
+    }
+}
+
+@media only screen and(max-width: 800px) {
+    .footer .nav__left__link {
+        padding: 15px 18px;
+    }
+
+    .footer__list .nav__sublist__link {
+        font-size: 11px;
+        line-height: 20px;
+    }
+
+    .footer__item {
+        &:nth-child(1) {
+            margin-right: 32px;
+        }
+    }
+}
+
+@media only screen and(max-width: 768px) {
+    .footer .container {
+        flex-direction: column;
+        padding: 0;
+        padding-top: 60px;
+        padding-bottom: 32px;
+    }
+
+    .footer__logo.footer__logo--top {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+
+        .footer__logo__image {
+            width: 174px;
+            height: 23px;
+            margin: 0 auto;
+            margin-bottom: 10px;
+        }
+
+        .footer__logo__text {
+            display: block;
+            max-width: 255px;
+            text-align: center;
+            font-size: 12px;
+        }
+    }
+
+    .footer .nav {
+        margin-bottom: 27px;
+    }
+
+    .footer .nav__right {
+        flex-direction: column;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .nav__right__inner {
+        flex-direction: column;
+        margin-bottom: 27px;
+    }
+
+    .footer .nav__left__list {
+        margin-bottom: 0;
+    }
+
+    .footer .nav__left__item {
+        &:first-child {
+            border-top: 1px solid $color8;
+        }
+    }
+
+    .footer .nav__left__link{
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .footer .nav__right__item {
+        padding: 0;
+    }
+
+    .nav__right .footer__logo {
+        display: none;
+    }
+
+    .footer .nav__right__link {
+        padding: 15px 0;
+    }
+
+    .footer__list {
+        display: none;
+    }
+
+    .footer .socials {
+        margin: 0;
+        margin-bottom: 22px;
+    }
+
+    .footer .socials__text {
+        text-align: center;
+    }
+
+    .footer .socials__list {
+        justify-content: center;
+    }
+
+    .footer {
+        .telephone__info {
+            display: block;
+        }
+    }
+
+    .nav__right__inner {
+        .call-back__button {
+            display: none;
+        }
+    }
+
+    .footer .call {
+        align-items: center;
+        margin: 0;
+    }
+
+    .footer .telephone__info {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    .footer .telephone__number {
+        margin-bottom: 5px;
+    }
+
+    .footer .telephne__text {
+        text-align: center;
+    }
+
+    .footer__description {
+        padding: 33px 20px;
+    }
+}

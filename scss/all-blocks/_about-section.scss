@@ -1,0 +1,42 @@
+.about-benefits {
+    margin-bottom: 145px;
+    background-color: $color6;
+
+    .container {
+        padding: 145px 20px;
+    }
+
+    .benefits{
+        padding: 0;
+        margin-bottom: 60px;
+    }
+
+    .consultation__inner {
+        background-color: $color3;
+        box-shadow: 0px 0px 30px rgba(43, 42, 40, 0.08);
+    }
+}
+
+@media only screen and(max-width: 768px) {
+    .about-benefits{
+        margin-bottom: 100px;
+
+        .container{
+            padding: 100px 20px;
+        }
+    }
+}
+
+@media only screen and(max-width: 425px) {
+    .about-benefits{
+        margin-bottom: 60px;
+
+        .container{
+            padding: 60px 20px;
+        }
+
+        .benefits{
+            margin-bottom: 40px;
+        }
+    }
+}

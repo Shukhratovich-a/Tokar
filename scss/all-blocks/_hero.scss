@@ -1,0 +1,250 @@
+// Hero
+.hero {
+    position: relative;
+    margin-bottom: 200px;
+    background-color: $color6;
+
+    .container {
+        padding-bottom: 200px;
+    }
+}
+
+.hero__top {
+    display: none;
+}
+
+.hero__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 74px;
+}
+
+.hero__title {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 8px;
+    max-width: 550px;
+    font-weight: 800;
+    font-size: 38px;
+    line-height: 50px;
+}
+
+.hero__text {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 26px;
+    max-width: 500px;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.hero__left__inner {
+    display: flex;
+    align-items: center;
+}
+
+.hero__link:first-child {
+    margin-right: 44px;
+}
+
+.hero__slider{
+    position: relative;
+}
+
+.hero-types__pagination{
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+}
+
+.hero .benefits {
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translate(50%, 50%);
+}
+
+@media only screen and(max-width: 1120px) {
+    .hero__info {
+        min-width: 465px;
+    }
+
+    .hero__image {
+        max-width: 500px;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+}
+
+@media only screen and(max-width: 1101px) {
+    .hero {
+        margin-bottom: 215px;
+
+        .container {
+            padding-bottom: 215px;
+        }
+    }
+}
+
+@media only screen and(max-width: 1010px) {
+    .hero__info {
+        max-width: 520px;
+    }
+
+    .hero__title {
+        font-size: 32px;
+    }
+    .hero__image {
+        max-width: 430px;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .hero .container {
+        padding-top: 16px;
+    }
+
+    .hero__inner {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero__info {
+        margin: 0 auto;
+    }
+
+    .hero__title {
+        width: 100%;
+
+        display: none;
+    }
+
+    .hero__top {
+        display: block;
+        order: 1;
+
+        .hero__title {
+            display: block;
+        }
+
+        &__text {
+            margin: 0;
+            margin-bottom: 16px;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 18px;
+        }
+    }
+
+    .hero__text {
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .hero__image {
+        max-width: 700px;
+        width: 100%;
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+    .hero__left__inner {
+        justify-content: center;
+    }
+}
+
+@media only screen and(max-width: 931px) {
+    .hero {
+        margin-bottom: 230px;
+
+        .container {
+            padding-bottom: 230px;
+        }
+    }
+}
+
+@media only screen and(max-width: 828px) {
+    .hero {
+        margin-bottom: 245px;
+
+        .container {
+            padding-bottom: 245px;
+        }
+    }
+}
+
+@media only screen and(max-width: 768px) {
+    .hero {
+        margin-bottom: 500px;
+
+        .container {
+            padding-bottom: 500px;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .hero__image {
+        margin-bottom: 20px;
+    }
+
+    .hero__info {
+        min-width: unset;
+    }
+
+    .hero__title {
+        max-width: 380px;
+        margin: 0 auto;
+        margin-bottom: 16px;
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .hero__text {
+        max-width: 380px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+    .hero__left__inner {
+        flex-direction: column;
+    }
+
+    .hero__link:first-child {
+        max-width: 250px;
+        width: 100%;
+        padding: 21px;
+        margin-right: 0;
+        margin-bottom: 20px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
+
+@media only screen and(max-width: 450px) {
+    .hero {
+        margin-bottom: 386px;
+
+        .container {
+            padding-bottom: 386px;
+        }
+    }
+}
+
+@media only screen and(max-width: 425px) {
+    .hero__top__text{
+        max-width: 235px;
+        margin: 0 auto;
+        margin-bottom: 16px;
+    }
+}

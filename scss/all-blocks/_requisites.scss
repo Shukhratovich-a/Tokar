@@ -1,0 +1,138 @@
+.requisites {
+    background-color: $color6;
+
+    .container {
+        margin-bottom: 145px;
+        padding: 145px 20px;
+    }
+}
+
+.requisites__title {
+    margin: 0;
+    margin-bottom: 26px;
+    font-family: $font;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 58px;
+    color: $color1;
+}
+
+.requisites__list {
+    display: flex;
+    column-gap: 32px;
+    row-gap: 30px;
+    flex-wrap: wrap;
+    align-items: stretch;
+    margin: 0;
+    padding: 0;
+}
+
+.requisites__item {
+    display: flex;
+    align-items: center;
+    max-width: 365px;
+    width: 100%;
+    padding-top: 41px;
+    padding-right: 60px;
+    padding-bottom: 41px;
+    padding-left: 32px;
+    list-style: none;
+    background-color: $color3;
+    box-shadow: 0px 0px 30px rgba(43, 42, 40, 0.08);
+    border-radius: 8px;
+
+    &::before {
+        margin-right: 40px;
+        flex-shrink: 0;
+        content: "";
+        width: 62px;
+        height: 62px;
+        background-image: url('../images/requisites/иконка-галочка.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+
+.requisites__item__heading {
+    margin-top: 0;
+    margin-bottom: 7px;
+    font-family: $font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    color: $color1;
+}
+
+.requisites__item__text {
+    margin: 0;
+    font-family: $font;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: $color1;
+}
+
+@media only screen and (max-width: 1198px) {
+    .requisites__title {
+        text-align: center;
+    }
+
+    .requisites__list {
+        justify-content: center;
+    }
+}
+
+@media only screen and(max-width: 768px) {
+    .requisites .container {
+        margin-bottom: 100px;
+        padding: 100px 20px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .requisites .container {
+        padding: 60px 20px;
+        margin-bottom: 60px;
+    }
+
+    .requisites__title {
+        margin-bottom: 12px;
+        text-align: left;
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .requisites__item {
+        padding-top: 26px;
+        padding-right: 26px;
+        padding-left: 22px;
+        padding-bottom: 26px;
+
+        &::before {
+            width: 49px;
+            height: 49px;
+            margin-right: 25px;
+        }
+    }
+
+    .requisites__item__heading {
+        font-size: 18px;
+        line-height: 20px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .requisites__item__heading {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .requisites__item__text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}

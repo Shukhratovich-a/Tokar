@@ -1,0 +1,128 @@
+.cases {
+    .container {
+        margin-bottom: 145px;
+    }
+
+    .cases__pagination {
+        display: none;
+    }
+}
+
+.cases__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+
+    .cases__pagination {
+        display: flex;
+    }
+}
+
+.cases__heading {
+    margin: 0;
+    font-size: 36px;
+    line-height: 58px;
+}
+
+.cases__pagination {
+    .pagination__button {
+        background-image: url("../images/posts/arrow-yellow.svg");
+    }
+
+    .pagination__text {
+        color: $color5;
+    }
+}
+
+.cases__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+    row-gap: 30px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.cases__image {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    border-radius: 0px 40px;
+}
+
+@media only screen and(max-width: 900px) {
+    .cases__list {
+        column-gap: 15px;
+        row-gap: 15px;
+    }
+}
+
+@media only screen and(max-width: 768px) {
+    .cases {
+        .container {
+            margin-bottom: 100px;
+        }
+    }
+
+    .cases__list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .cases__item:nth-child(6) ~ .cases__item {
+        display: none;
+    }
+
+    .cases__image {
+        border-radius: 0px 30px;
+    }
+}
+
+@media only screen and(max-width: 550px) {
+    .cases {
+        .cases__pagination {
+            display: flex;
+        }
+    }
+
+    .cases__top {
+        .cases__pagination {
+            display: none;
+        }
+    }
+
+    .cases__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cases__item:nth-child(4) ~ .cases__item {
+        display: none;
+    }
+}
+
+@media only screen and(max-width: 425px) {
+    .cases {
+        .container {
+            margin-bottom: 60px;
+        }
+    }
+
+    .cases__top {
+        margin-bottom: 20px;
+    }
+
+    .cases__heading {
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .cases__list{
+        margin-bottom: 20px;
+    }
+
+    .cases__pagination{
+        margin: 0 auto;
+    }
+}

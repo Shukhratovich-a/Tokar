@@ -1,0 +1,25 @@
+.navigation {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-top: 20px;
+}
+
+.navigation__text {
+    display: block;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 17px;
+    color: $gray3;
+
+    & + & {
+        margin-left: 3px;
+    }
+}
+
+@media only screen and(max-width: 768px) {
+    .navigation{
+        padding-top: 12px;
+        margin-bottom: 15px;
+    }
+}

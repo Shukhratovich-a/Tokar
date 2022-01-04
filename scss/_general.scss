@@ -7,7 +7,7 @@ html {
 *::before,
 *::after {
     box-sizing: inherit;
-    scroll-behavior: smooth;
+    // scroll-behavior: smooth;
 }
 
 .visually-hidden {
@@ -50,4 +50,36 @@ main {
     only screen and (min-resolution: 192dpi),
     only screen and (min-resolution: 2dppx) {
     /* Retina-specific stuff here */
+
+    .build-type {
+        &:nth-child(1) {
+            &::before {
+                background-image: url("../../images/build/build-types/type-1@2x.png");
+            }
+        }
+
+        &:nth-child(2) {
+            &::before {
+                background-image: url("../../images/build/build-types/type-2@2x.png");
+            }
+        }
+
+        &:nth-child(3) {
+            &::before {
+                background-image: url("../../images/build/build-types/type-3@2x.png");
+            }
+        }
+
+        &:nth-child(4) {
+            &::before {
+                background-image: url("../../images/build/build-types/type-4@2x.png");
+            }
+        }
+    }
+
+    .consultation__inner {
+        &::after {
+            background-image: url("../images/consultation/consultation@2x.jpg");
+        }
+    }
 }

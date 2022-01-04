@@ -1,0 +1,29 @@
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 83px;
+}
+
+.pagination__button {
+    width: 18px;
+    height: 12px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    background-image: url('../images/barcelona/Arrow.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+
+    &--next{
+        transform: rotate(180deg);
+    }
+}
+
+.pagination__text {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    color: $color3;
+}
